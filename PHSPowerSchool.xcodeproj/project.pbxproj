@@ -14,6 +14,8 @@
 		94C90A491AA9D58E00E7D516 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A481AA9D58E00E7D516 /* Images.xcassets */; };
 		94C90A4C1AA9D58E00E7D516 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A4A1AA9D58E00E7D516 /* LaunchScreen.xib */; };
 		94C90A581AA9D58E00E7D516 /* PHSPowerSchoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A571AA9D58E00E7D516 /* PHSPowerSchoolTests.m */; };
+		94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */; };
+		94C90A651AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		94C90A511AA9D58E00E7D516 /* PHSPowerSchoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PHSPowerSchoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C90A561AA9D58E00E7D516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C90A571AA9D58E00E7D516 /* PHSPowerSchoolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PHSPowerSchoolTests.m; sourceTree = "<group>"; };
+		94C90A611AA9D58E00E7D516 /* LoginToPowerSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginToPowerSchoolViewController.h; sourceTree = "<group>"; };
+		94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginToPowerSchoolViewController.m; sourceTree = "<group>"; };
+		94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginToPowerSchoolViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		94C90A3A1AA9D58E00E7D516 /* PHSPowerSchool */ = {
 			isa = PBXGroup;
 			children = (
+				94C90A611AA9D58E00E7D516 /* LoginToPowerSchoolViewController.h */,
+				94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */,
+				94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */,
 				94C90A3F1AA9D58E00E7D516 /* AppDelegate.h */,
 				94C90A401AA9D58E00E7D516 /* AppDelegate.m */,
 				94C90A421AA9D58E00E7D516 /* ViewController.h */,
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C90A471AA9D58E00E7D516 /* Main.storyboard in Resources */,
+				94C90A651AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib in Resources */,
 				94C90A4C1AA9D58E00E7D516 /* LaunchScreen.xib in Resources */,
 				94C90A491AA9D58E00E7D516 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C90A441AA9D58E00E7D516 /* ViewController.m in Sources */,
+				94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */,
 				94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */,
 				94C90A3E1AA9D58E00E7D516 /* main.m in Sources */,
 			);
