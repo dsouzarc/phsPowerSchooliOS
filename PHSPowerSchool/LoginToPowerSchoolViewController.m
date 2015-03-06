@@ -9,6 +9,8 @@
 #import "LoginToPowerSchoolViewController.h"
 #import "PQFBarsInCircle.h"
 #import "UICKeyChainStore.h"
+#import "StudentCIass.h"
+#import "CiassInformation.h"
 #import "SettingsViewController.h"
 #import "TFHpple.h"
 
@@ -57,31 +59,44 @@
     
     
     for (int i = 3; i < tutorialsNodes.count - 9; i++) {
+        
         TFHppleElement *entireClass = (TFHppleElement*)[tutorialsNodes objectAtIndex:i];
-        
         NSArray *classDetails = entireClass.children;
-        
-        for(int y = 0; y < classDetails.count; y++) {
-            NSLog(@"%i\t%@", y, ((TFHppleElement*)classDetails[y]).raw);
-        }
-        
+
         NSString *className = ((TFHppleElement*)classDetails[14]).content;
         
-        TFHppleElement *q1Information = ((TFHppleElement*)classDetails[16]);
+        CiassInformation *q1Information = [self getClassInformation:((TFHppleElement*)classDetails[16])];
+        CiassInformation *q2Information = [self getClassInformation:((TFHppleElement*)classDetails[18])];
+        CiassInformation *x1Information = [self getClassInformation:((TFHppleElement*)classDetails[20])];
+        CiassInformation *q3Information = [self getClassInformation:((TFHppleElement*)classDetails[22])];
+        CiassInformation *q4Information = [self getClassInformation:((TFHppleElement*)classDetails[24])];
+        CiassInformation *x2Information = [self getClassInformation:((TFHppleElement*)classDetails[26])];
         
-        NSString *q1Grade = q1Information.content;
-        NSString *q1Link = [self parseLinkFromTD:q1Information.raw];
+        StudentCIass *class = [[StudentCIass alloc] initWithAllInformation:className q1:q1Information q2:q2Information x1:x1Information q3:q3Information q4:q4Information x2:x2Information];
+        
+        [self.studentClasses addObject:class];
     }
     
-    
-        // 7
-        //tutorial.url = [element objectForKey:@"href"];
+    for(StudentCIass *class in self.studentClasses) {
+        NSLog(class.description);
+    }
 }
+
+- (CiassInformation*) getClassInformation:(TFHppleElement*)attributes
+{
+
+    NSString *grade = attributes.content;
+    NSString *link = [self parseLinkFromTD:attributes.raw];
+    
+    return [[CiassInformation alloc] initWithInformation:grade link:link];
+}
+
 
 - (NSString*) parseLinkFromTD:(NSString*)string
 {
     string = [string componentsSeparatedByString:@">"][1];
     string = [string stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
     string = [string stringByReplacingOccurrencesOfString:@"<a href=" withString:@""];
     return string;
 }
