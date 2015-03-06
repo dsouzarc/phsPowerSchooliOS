@@ -30,7 +30,7 @@
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://pschool.princetonk12.org/public/home.html"]]];
     
-    if(self.keychain[@"username"] == nil || self.keychain[@"password"] == nil || 1 == 1) {
+    if(self.keychain[@"username"] == nil || self.keychain[@"password"] == nil) {
         self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil webView:self.webView];
         [self.settingsViewController showInView:self.view shouldAnimate:YES];
     }

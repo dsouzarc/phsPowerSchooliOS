@@ -20,7 +20,8 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJZ-nb-eyL">
-                    <rect key="frame" x="0.0" y="0.0" width="69" height="42"/>
+                    <rect key="frame" x="8" y="8" width="77" height="52"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <state key="normal" title="Settings">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -35,13 +36,21 @@
                 <constraint firstAttribute="bottom" secondItem="hlg-5P-MKb" secondAttribute="bottom" id="3fL-Bx-tGd"/>
                 <constraint firstItem="hlg-5P-MKb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5nR-zQ-pHT"/>
                 <constraint firstItem="eJZ-nb-eyL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5qP-Az-ZEl"/>
+                <constraint firstItem="eJZ-nb-eyL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="9Lm-yX-nX0"/>
+                <constraint firstItem="eJZ-nb-eyL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="AYU-AX-ZgY"/>
                 <constraint firstItem="hlg-5P-MKb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="auK-2K-P3n"/>
                 <constraint firstAttribute="trailing" secondItem="hlg-5P-MKb" secondAttribute="trailing" id="bmO-BX-HG9"/>
                 <constraint firstAttribute="centerY" secondItem="hlg-5P-MKb" secondAttribute="centerY" id="eJH-3G-xST"/>
                 <constraint firstAttribute="centerX" secondItem="hlg-5P-MKb" secondAttribute="centerX" id="r8W-RE-5CK"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="153.5" y="308.5"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0II-sc-We7"/>
+                    <exclude reference="5qP-Az-ZEl"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="153.5" y="306.5"/>
         </view>
     </objects>
 </document>
