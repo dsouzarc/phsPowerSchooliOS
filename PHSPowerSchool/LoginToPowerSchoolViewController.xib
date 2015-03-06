@@ -19,17 +19,29 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </webView>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJZ-nb-eyL">
+                    <rect key="frame" x="0.0" y="0.0" width="69" height="42"/>
+                    <state key="normal" title="Settings">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="editSettings:" destination="-1" eventType="touchUpInside" id="13B-qG-pzu"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="eJZ-nb-eyL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0II-sc-We7"/>
                 <constraint firstAttribute="bottom" secondItem="hlg-5P-MKb" secondAttribute="bottom" id="3fL-Bx-tGd"/>
                 <constraint firstItem="hlg-5P-MKb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5nR-zQ-pHT"/>
+                <constraint firstItem="eJZ-nb-eyL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5qP-Az-ZEl"/>
                 <constraint firstItem="hlg-5P-MKb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="auK-2K-P3n"/>
                 <constraint firstAttribute="trailing" secondItem="hlg-5P-MKb" secondAttribute="trailing" id="bmO-BX-HG9"/>
                 <constraint firstAttribute="centerY" secondItem="hlg-5P-MKb" secondAttribute="centerY" id="eJH-3G-xST"/>
                 <constraint firstAttribute="centerX" secondItem="hlg-5P-MKb" secondAttribute="centerX" id="r8W-RE-5CK"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="153.5" y="308.5"/>
         </view>
     </objects>
 </document>

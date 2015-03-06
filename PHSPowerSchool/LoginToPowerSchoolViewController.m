@@ -17,6 +17,7 @@
 
 @property (strong, nonatomic) UICKeyChainStore *keychain;
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
+- (IBAction)editSettings:(id)sender;
 
 @end
 
@@ -89,5 +90,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)editSettings:(id)sender {
+    self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil webView:self.webView];
+    [self.settingsViewController showInView:self.view shouldAnimate:YES];
+}
 
 @end
