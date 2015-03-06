@@ -6,7 +6,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="XaB-Ox-F7k"/>
+                <outlet property="detailsLabel" destination="yue-dK-fmO" id="58v-xD-Dbb"/>
+                <outlet property="passwordTextField" destination="1mV-Gs-gLA" id="IcI-WI-ppT"/>
+                <outlet property="popupView" destination="dEx-kD-fqd" id="H4C-9r-2pJ"/>
+                <outlet property="studentAccountLabel" destination="XC6-EZ-dxn" id="8yJ-oR-2Vt"/>
+                <outlet property="studentAccountSwitch" destination="DyC-r0-Cdh" id="OfR-tt-8Bl"/>
+                <outlet property="usernameTextField" destination="3GA-pD-rjK" id="c6A-MO-CF7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="qLX-Dj-2fr"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -30,7 +36,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PowerSchool Login Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yue-dK-fmO">
                             <rect key="frame" x="13" y="8" width="207" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.34559046310879293" green="0.52952935406702062" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XC6-EZ-dxn">
@@ -44,12 +50,15 @@
                             <state key="normal" title="Save Login Information">
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="saveSettings:" destination="-1" eventType="touchUpInside" id="jlI-Jo-mKY"/>
+                            </connections>
                         </button>
                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DyC-r0-Cdh">
                             <rect key="frame" x="176" y="226" width="51" height="31"/>
                         </switch>
                     </subviews>
-                    <color key="backgroundColor" red="0.20000000000000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="0.99769497428757836" blue="0.99149698524027885" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="3GA-pD-rjK" secondAttribute="trailing" constant="8" id="37q-9f-nLD"/>
                         <constraint firstItem="3GA-pD-rjK" firstAttribute="leading" secondItem="dEx-kD-fqd" secondAttribute="leading" constant="8" id="5e7-V0-jUv"/>

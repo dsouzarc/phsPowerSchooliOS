@@ -9,9 +9,14 @@
 #import "LoginToPowerSchoolViewController.h"
 #import "PQFBarsInCircle.h"
 #import "UICKeyChainStore.h"
+#import "SettingsViewController.h"
+
 @interface LoginToPowerSchoolViewController ()
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
+
+@property (strong, nonatomic) UICKeyChainStore *keychain;
+@property (strong, nonatomic) SettingsViewController *settingsViewController;
 
 @end
 
@@ -20,8 +25,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.webView.delegate = self;
+    self.keychain = [[UICKeyChainStore alloc] init];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://pschool.princetonk12.org/public/home.html"]]];
+    
+    if(self.keychain[@"username"] == nil || self.keychain[@"password"] == nil || 1 == 1) {
+        self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil webView:self.webView];
+        [self.settingsViewController showInView:self.view shouldAnimate:YES];
+    }
 }
 
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

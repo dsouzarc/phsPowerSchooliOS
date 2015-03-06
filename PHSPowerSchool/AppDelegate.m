@@ -8,28 +8,19 @@
 
 #import "AppDelegate.h"
 #import "LoginToPowerSchoolViewController.h"
-#import "UICKeyChainStore.h"
-#import "Source/MKColor.swift"
+
 
 @interface AppDelegate ()
 
-@property (nonatomic, strong) UICKeyChainStore *keychain;
-
+@property (nonatomic, strong) LoginToPowerSchoolViewController *loginToPowerSchoolViewController;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    self.keychain = [[UICKeyChainStore alloc] initWithService:@"PSchoolLogin"];
-    
-    
-    
-    
-    LoginToPowerSchoolViewController *loginToPowerSchoolViewController = [[LoginToPowerSchoolViewController alloc] initWithNibName:@"LoginToPowerSchoolViewController" bundle:[NSBundle mainBundle]];
-    
-    self.window.rootViewController = loginToPowerSchoolViewController;
+    self.loginToPowerSchoolViewController = [[LoginToPowerSchoolViewController alloc] initWithNibName:@"LoginToPowerSchoolViewController" bundle:[NSBundle mainBundle]];
+    self.window.rootViewController = self.loginToPowerSchoolViewController;
     
     return YES;
 }
