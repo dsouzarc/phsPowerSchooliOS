@@ -32,6 +32,9 @@
 		94C90A901AA9E58200E7D516 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A891AA9E58200E7D516 /* MKLayer.swift */; };
 		94C90A911AA9E58200E7D516 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A8A1AA9E58200E7D516 /* MKTableViewCell.swift */; };
 		94C90A921AA9E58200E7D516 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A8B1AA9E58200E7D516 /* MKTextField.swift */; };
+		94C90A9A1AA9FCB500E7D516 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A951AA9FCB500E7D516 /* TFHpple.m */; };
+		94C90A9B1AA9FCB500E7D516 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A971AA9FCB500E7D516 /* TFHppleElement.m */; };
+		94C90A9C1AA9FCB500E7D516 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A991AA9FCB500E7D516 /* XPathQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,12 @@
 		94C90A891AA9E58200E7D516 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
 		94C90A8A1AA9E58200E7D516 /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
 		94C90A8B1AA9E58200E7D516 /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
+		94C90A941AA9FCB500E7D516 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		94C90A951AA9FCB500E7D516 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		94C90A961AA9FCB500E7D516 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		94C90A971AA9FCB500E7D516 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		94C90A981AA9FCB500E7D516 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		94C90A991AA9FCB500E7D516 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +134,7 @@
 		94C90A3A1AA9D58E00E7D516 /* PHSPowerSchool */ = {
 			isa = PBXGroup;
 			children = (
+				94C90A931AA9FCB500E7D516 /* Classes */,
 				94C90A661AA9DF1000E7D516 /* UICKeyChainStore */,
 				94C90A6D1AA9DF1000E7D516 /* PQFCustomLoaders */,
 				94C90A751AA9DF1000E7D516 /* UIColor+FlatColors */,
@@ -237,6 +247,19 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		94C90A931AA9FCB500E7D516 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A941AA9FCB500E7D516 /* TFHpple.h */,
+				94C90A951AA9FCB500E7D516 /* TFHpple.m */,
+				94C90A961AA9FCB500E7D516 /* TFHppleElement.h */,
+				94C90A971AA9FCB500E7D516 /* TFHppleElement.m */,
+				94C90A981AA9FCB500E7D516 /* XPathQuery.h */,
+				94C90A991AA9FCB500E7D516 /* XPathQuery.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -341,14 +364,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C90A7E1AA9DF1000E7D516 /* UIColor+FlatColors.m in Sources */,
+				94C90A9C1AA9FCB500E7D516 /* XPathQuery.m in Sources */,
 				94C90A7A1AA9DF1000E7D516 /* README.md in Sources */,
 				94C90A8E1AA9E58200E7D516 /* MKImageView.swift in Sources */,
 				94C90A8D1AA9E58200E7D516 /* MKColor.swift in Sources */,
+				94C90A9B1AA9FCB500E7D516 /* TFHppleElement.m in Sources */,
 				94C90A7D1AA9DF1000E7D516 /* PQFCirclesInTriangle.m in Sources */,
 				94C90A7B1AA9DF1000E7D516 /* PQFBarsInCircle.m in Sources */,
 				94C90A441AA9D58E00E7D516 /* ViewController.m in Sources */,
 				94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */,
 				94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */,
+				94C90A9A1AA9FCB500E7D516 /* TFHpple.m in Sources */,
 				94C90A921AA9E58200E7D516 /* MKTextField.swift in Sources */,
 				94C90A911AA9E58200E7D516 /* MKTableViewCell.swift in Sources */,
 				94C90A8F1AA9E58200E7D516 /* MKLabel.swift in Sources */,
