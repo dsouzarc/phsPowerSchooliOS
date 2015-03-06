@@ -35,6 +35,10 @@
 		94C90A9A1AA9FCB500E7D516 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A951AA9FCB500E7D516 /* TFHpple.m */; };
 		94C90A9B1AA9FCB500E7D516 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A971AA9FCB500E7D516 /* TFHppleElement.m */; };
 		94C90A9C1AA9FCB500E7D516 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A991AA9FCB500E7D516 /* XPathQuery.m */; };
+		94C90A9E1AA9FF3C00E7D516 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C90A9D1AA9FF3C00E7D516 /* libxml2.dylib */; };
+		94C90AA01AAA035400E7D516 /* HTML.txt in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A9F1AAA035400E7D516 /* HTML.txt */; };
+		94ED2D011AAA19DB00692469 /* StudentCIass.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED2D001AAA19DB00692469 /* StudentCIass.m */; };
+		94ED2D041AAA49C500692469 /* CiassInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 94ED2D031AAA49C500692469 /* CiassInformation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,12 @@
 		94C90A971AA9FCB500E7D516 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
 		94C90A981AA9FCB500E7D516 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
 		94C90A991AA9FCB500E7D516 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		94C90A9D1AA9FF3C00E7D516 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		94C90A9F1AAA035400E7D516 /* HTML.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HTML.txt; sourceTree = "<group>"; };
+		94ED2CFF1AAA19DB00692469 /* StudentCIass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentCIass.h; sourceTree = "<group>"; };
+		94ED2D001AAA19DB00692469 /* StudentCIass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentCIass.m; sourceTree = "<group>"; };
+		94ED2D021AAA49C500692469 /* CiassInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiassInformation.h; sourceTree = "<group>"; };
+		94ED2D031AAA49C500692469 /* CiassInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiassInformation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C90A9E1AA9FF3C00E7D516 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +127,7 @@
 		94C90A2F1AA9D58E00E7D516 = {
 			isa = PBXGroup;
 			children = (
+				94C90A9D1AA9FF3C00E7D516 /* libxml2.dylib */,
 				94C90A3A1AA9D58E00E7D516 /* PHSPowerSchool */,
 				94C90A541AA9D58E00E7D516 /* PHSPowerSchoolTests */,
 				94C90A391AA9D58E00E7D516 /* Products */,
@@ -153,6 +165,11 @@
 				94C90A801AA9DFD400E7D516 /* SettingsViewController.m */,
 				94C90A811AA9DFD400E7D516 /* SettingsViewController.xib */,
 				94C90A841AA9E58200E7D516 /* Source */,
+				94C90A9F1AAA035400E7D516 /* HTML.txt */,
+				94ED2CFF1AAA19DB00692469 /* StudentCIass.h */,
+				94ED2D001AAA19DB00692469 /* StudentCIass.m */,
+				94ED2D021AAA49C500692469 /* CiassInformation.h */,
+				94ED2D031AAA49C500692469 /* CiassInformation.m */,
 			);
 			path = PHSPowerSchool;
 			sourceTree = "<group>";
@@ -346,6 +363,7 @@
 				94C90A4C1AA9D58E00E7D516 /* LaunchScreen.xib in Resources */,
 				94C90A491AA9D58E00E7D516 /* Images.xcassets in Resources */,
 				94C90A791AA9DF1000E7D516 /* LICENSE in Resources */,
+				94C90AA01AAA035400E7D516 /* HTML.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C90A7E1AA9DF1000E7D516 /* UIColor+FlatColors.m in Sources */,
+				94ED2D041AAA49C500692469 /* CiassInformation.m in Sources */,
 				94C90A9C1AA9FCB500E7D516 /* XPathQuery.m in Sources */,
 				94C90A7A1AA9DF1000E7D516 /* README.md in Sources */,
 				94C90A8E1AA9E58200E7D516 /* MKImageView.swift in Sources */,
@@ -380,6 +399,7 @@
 				94C90A8F1AA9E58200E7D516 /* MKLabel.swift in Sources */,
 				94C90A781AA9DF1000E7D516 /* UICKeyChainStore.m in Sources */,
 				94C90A821AA9DFD400E7D516 /* SettingsViewController.m in Sources */,
+				94ED2D011AAA19DB00692469 /* StudentCIass.m in Sources */,
 				94C90A8C1AA9E58200E7D516 /* MKButton.swift in Sources */,
 				94C90A901AA9E58200E7D516 /* MKLayer.swift in Sources */,
 				94C90A3E1AA9D58E00E7D516 /* main.m in Sources */,
@@ -504,7 +524,13 @@
 		94C90A5C1AA9D58E00E7D516 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = PHSPowerSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,7 +540,13 @@
 		94C90A5D1AA9D58E00E7D516 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = PHSPowerSchool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
