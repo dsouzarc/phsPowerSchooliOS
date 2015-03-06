@@ -16,6 +16,13 @@
 		94C90A581AA9D58E00E7D516 /* PHSPowerSchoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A571AA9D58E00E7D516 /* PHSPowerSchoolTests.m */; };
 		94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */; };
 		94C90A651AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */; };
+		94C90A781AA9DF1000E7D516 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A6A1AA9DF1000E7D516 /* UICKeyChainStore.m */; };
+		94C90A791AA9DF1000E7D516 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A6B1AA9DF1000E7D516 /* LICENSE */; };
+		94C90A7A1AA9DF1000E7D516 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A6C1AA9DF1000E7D516 /* README.md */; };
+		94C90A7B1AA9DF1000E7D516 /* PQFBarsInCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A6F1AA9DF1000E7D516 /* PQFBarsInCircle.m */; };
+		94C90A7C1AA9DF1000E7D516 /* PQFBouncingBalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A711AA9DF1000E7D516 /* PQFBouncingBalls.m */; };
+		94C90A7D1AA9DF1000E7D516 /* PQFCirclesInTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A731AA9DF1000E7D516 /* PQFCirclesInTriangle.m */; };
+		94C90A7E1AA9DF1000E7D516 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A771AA9DF1000E7D516 /* UIColor+FlatColors.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,19 @@
 		94C90A611AA9D58E00E7D516 /* LoginToPowerSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginToPowerSchoolViewController.h; sourceTree = "<group>"; };
 		94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginToPowerSchoolViewController.m; sourceTree = "<group>"; };
 		94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginToPowerSchoolViewController.xib; sourceTree = "<group>"; };
+		94C90A691AA9DF1000E7D516 /* UICKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICKeyChainStore.h; sourceTree = "<group>"; };
+		94C90A6A1AA9DF1000E7D516 /* UICKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStore.m; sourceTree = "<group>"; };
+		94C90A6B1AA9DF1000E7D516 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		94C90A6C1AA9DF1000E7D516 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		94C90A6E1AA9DF1000E7D516 /* PQFBarsInCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQFBarsInCircle.h; sourceTree = "<group>"; };
+		94C90A6F1AA9DF1000E7D516 /* PQFBarsInCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQFBarsInCircle.m; sourceTree = "<group>"; };
+		94C90A701AA9DF1000E7D516 /* PQFBouncingBalls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQFBouncingBalls.h; sourceTree = "<group>"; };
+		94C90A711AA9DF1000E7D516 /* PQFBouncingBalls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQFBouncingBalls.m; sourceTree = "<group>"; };
+		94C90A721AA9DF1000E7D516 /* PQFCirclesInTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQFCirclesInTriangle.h; sourceTree = "<group>"; };
+		94C90A731AA9DF1000E7D516 /* PQFCirclesInTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PQFCirclesInTriangle.m; sourceTree = "<group>"; };
+		94C90A741AA9DF1000E7D516 /* PQFCustomLoaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQFCustomLoaders.h; sourceTree = "<group>"; };
+		94C90A761AA9DF1000E7D516 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
+		94C90A771AA9DF1000E7D516 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +106,9 @@
 		94C90A3A1AA9D58E00E7D516 /* PHSPowerSchool */ = {
 			isa = PBXGroup;
 			children = (
+				94C90A661AA9DF1000E7D516 /* UICKeyChainStore */,
+				94C90A6D1AA9DF1000E7D516 /* PQFCustomLoaders */,
+				94C90A751AA9DF1000E7D516 /* UIColor+FlatColors */,
 				94C90A611AA9D58E00E7D516 /* LoginToPowerSchoolViewController.h */,
 				94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */,
 				94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */,
@@ -125,6 +148,56 @@
 				94C90A561AA9D58E00E7D516 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94C90A661AA9DF1000E7D516 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A671AA9DF1000E7D516 /* Lib */,
+				94C90A6B1AA9DF1000E7D516 /* LICENSE */,
+				94C90A6C1AA9DF1000E7D516 /* README.md */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		94C90A671AA9DF1000E7D516 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A681AA9DF1000E7D516 /* UICKeyChainStore */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		94C90A681AA9DF1000E7D516 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A691AA9DF1000E7D516 /* UICKeyChainStore.h */,
+				94C90A6A1AA9DF1000E7D516 /* UICKeyChainStore.m */,
+			);
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		94C90A6D1AA9DF1000E7D516 /* PQFCustomLoaders */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A6E1AA9DF1000E7D516 /* PQFBarsInCircle.h */,
+				94C90A6F1AA9DF1000E7D516 /* PQFBarsInCircle.m */,
+				94C90A701AA9DF1000E7D516 /* PQFBouncingBalls.h */,
+				94C90A711AA9DF1000E7D516 /* PQFBouncingBalls.m */,
+				94C90A721AA9DF1000E7D516 /* PQFCirclesInTriangle.h */,
+				94C90A731AA9DF1000E7D516 /* PQFCirclesInTriangle.m */,
+				94C90A741AA9DF1000E7D516 /* PQFCustomLoaders.h */,
+			);
+			path = PQFCustomLoaders;
+			sourceTree = "<group>";
+		};
+		94C90A751AA9DF1000E7D516 /* UIColor+FlatColors */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A761AA9DF1000E7D516 /* UIColor+FlatColors.h */,
+				94C90A771AA9DF1000E7D516 /* UIColor+FlatColors.m */,
+			);
+			path = "UIColor+FlatColors";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +284,7 @@
 				94C90A651AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib in Resources */,
 				94C90A4C1AA9D58E00E7D516 /* LaunchScreen.xib in Resources */,
 				94C90A491AA9D58E00E7D516 /* Images.xcassets in Resources */,
+				94C90A791AA9DF1000E7D516 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C90A7E1AA9DF1000E7D516 /* UIColor+FlatColors.m in Sources */,
+				94C90A7A1AA9DF1000E7D516 /* README.md in Sources */,
+				94C90A7D1AA9DF1000E7D516 /* PQFCirclesInTriangle.m in Sources */,
+				94C90A7B1AA9DF1000E7D516 /* PQFBarsInCircle.m in Sources */,
 				94C90A441AA9D58E00E7D516 /* ViewController.m in Sources */,
 				94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */,
 				94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */,
+				94C90A781AA9DF1000E7D516 /* UICKeyChainStore.m in Sources */,
 				94C90A3E1AA9D58E00E7D516 /* main.m in Sources */,
+				94C90A7C1AA9DF1000E7D516 /* PQFBouncingBalls.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +502,7 @@
 				94C90A5D1AA9D58E00E7D516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94C90A5E1AA9D58E00E7D516 /* Build configuration list for PBXNativeTarget "PHSPowerSchoolTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +511,7 @@
 				94C90A601AA9D58E00E7D516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
