@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginToPowerSchoolViewController : UIViewController
+@interface LoginToPowerSchoolViewController : UIViewController <UIWebViewDelegate>
 
 @end

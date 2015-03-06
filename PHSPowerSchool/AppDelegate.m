@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginToPowerSchoolViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    LoginToPowerSchoolViewController *loginToPowerSchoolViewController = [[LoginToPowerSchoolViewController alloc] initWithNibName:@"LoginToPowerSchoolViewController" bundle:[NSBundle mainBundle]];
+    
+    self.window.rootViewController = loginToPowerSchoolViewController;
+    
     return YES;
 }
 
@@ -35,7 +41,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
