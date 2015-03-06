@@ -8,8 +8,12 @@
 
 #import "AppDelegate.h"
 #import "LoginToPowerSchoolViewController.h"
+#import "UICKeyChainStore.h"
+#import "Source/MKColor.swift"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) UICKeyChainStore *keychain;
 
 @end
 
@@ -17,7 +21,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.keychain = [[UICKeyChainStore alloc] initWithService:@"PSchoolLogin"];
+    
+    
+    
     
     LoginToPowerSchoolViewController *loginToPowerSchoolViewController = [[LoginToPowerSchoolViewController alloc] initWithNibName:@"LoginToPowerSchoolViewController" bundle:[NSBundle mainBundle]];
     
@@ -41,7 +49,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

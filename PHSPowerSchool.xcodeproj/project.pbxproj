@@ -23,6 +23,15 @@
 		94C90A7C1AA9DF1000E7D516 /* PQFBouncingBalls.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A711AA9DF1000E7D516 /* PQFBouncingBalls.m */; };
 		94C90A7D1AA9DF1000E7D516 /* PQFCirclesInTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A731AA9DF1000E7D516 /* PQFCirclesInTriangle.m */; };
 		94C90A7E1AA9DF1000E7D516 /* UIColor+FlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A771AA9DF1000E7D516 /* UIColor+FlatColors.m */; };
+		94C90A821AA9DFD400E7D516 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A801AA9DFD400E7D516 /* SettingsViewController.m */; };
+		94C90A831AA9DFD400E7D516 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94C90A811AA9DFD400E7D516 /* SettingsViewController.xib */; };
+		94C90A8C1AA9E58200E7D516 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A851AA9E58200E7D516 /* MKButton.swift */; };
+		94C90A8D1AA9E58200E7D516 /* MKColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A861AA9E58200E7D516 /* MKColor.swift */; };
+		94C90A8E1AA9E58200E7D516 /* MKImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A871AA9E58200E7D516 /* MKImageView.swift */; };
+		94C90A8F1AA9E58200E7D516 /* MKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A881AA9E58200E7D516 /* MKLabel.swift */; };
+		94C90A901AA9E58200E7D516 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A891AA9E58200E7D516 /* MKLayer.swift */; };
+		94C90A911AA9E58200E7D516 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A8A1AA9E58200E7D516 /* MKTableViewCell.swift */; };
+		94C90A921AA9E58200E7D516 /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A8B1AA9E58200E7D516 /* MKTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +74,16 @@
 		94C90A741AA9DF1000E7D516 /* PQFCustomLoaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQFCustomLoaders.h; sourceTree = "<group>"; };
 		94C90A761AA9DF1000E7D516 /* UIColor+FlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatColors.h"; sourceTree = "<group>"; };
 		94C90A771AA9DF1000E7D516 /* UIColor+FlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatColors.m"; sourceTree = "<group>"; };
+		94C90A7F1AA9DFD400E7D516 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		94C90A801AA9DFD400E7D516 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		94C90A811AA9DFD400E7D516 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		94C90A851AA9E58200E7D516 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
+		94C90A861AA9E58200E7D516 /* MKColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKColor.swift; sourceTree = "<group>"; };
+		94C90A871AA9E58200E7D516 /* MKImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKImageView.swift; sourceTree = "<group>"; };
+		94C90A881AA9E58200E7D516 /* MKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLabel.swift; sourceTree = "<group>"; };
+		94C90A891AA9E58200E7D516 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
+		94C90A8A1AA9E58200E7D516 /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
+		94C90A8B1AA9E58200E7D516 /* MKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +139,10 @@
 				94C90A481AA9D58E00E7D516 /* Images.xcassets */,
 				94C90A4A1AA9D58E00E7D516 /* LaunchScreen.xib */,
 				94C90A3B1AA9D58E00E7D516 /* Supporting Files */,
+				94C90A7F1AA9DFD400E7D516 /* SettingsViewController.h */,
+				94C90A801AA9DFD400E7D516 /* SettingsViewController.m */,
+				94C90A811AA9DFD400E7D516 /* SettingsViewController.xib */,
+				94C90A841AA9E58200E7D516 /* Source */,
 			);
 			path = PHSPowerSchool;
 			sourceTree = "<group>";
@@ -198,6 +221,20 @@
 				94C90A771AA9DF1000E7D516 /* UIColor+FlatColors.m */,
 			);
 			path = "UIColor+FlatColors";
+			sourceTree = "<group>";
+		};
+		94C90A841AA9E58200E7D516 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				94C90A851AA9E58200E7D516 /* MKButton.swift */,
+				94C90A861AA9E58200E7D516 /* MKColor.swift */,
+				94C90A871AA9E58200E7D516 /* MKImageView.swift */,
+				94C90A881AA9E58200E7D516 /* MKLabel.swift */,
+				94C90A891AA9E58200E7D516 /* MKLayer.swift */,
+				94C90A8A1AA9E58200E7D516 /* MKTableViewCell.swift */,
+				94C90A8B1AA9E58200E7D516 /* MKTextField.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94C90A471AA9D58E00E7D516 /* Main.storyboard in Resources */,
+				94C90A831AA9DFD400E7D516 /* SettingsViewController.xib in Resources */,
 				94C90A651AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib in Resources */,
 				94C90A4C1AA9D58E00E7D516 /* LaunchScreen.xib in Resources */,
 				94C90A491AA9D58E00E7D516 /* Images.xcassets in Resources */,
@@ -304,12 +342,20 @@
 			files = (
 				94C90A7E1AA9DF1000E7D516 /* UIColor+FlatColors.m in Sources */,
 				94C90A7A1AA9DF1000E7D516 /* README.md in Sources */,
+				94C90A8E1AA9E58200E7D516 /* MKImageView.swift in Sources */,
+				94C90A8D1AA9E58200E7D516 /* MKColor.swift in Sources */,
 				94C90A7D1AA9DF1000E7D516 /* PQFCirclesInTriangle.m in Sources */,
 				94C90A7B1AA9DF1000E7D516 /* PQFBarsInCircle.m in Sources */,
 				94C90A441AA9D58E00E7D516 /* ViewController.m in Sources */,
 				94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */,
 				94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */,
+				94C90A921AA9E58200E7D516 /* MKTextField.swift in Sources */,
+				94C90A911AA9E58200E7D516 /* MKTableViewCell.swift in Sources */,
+				94C90A8F1AA9E58200E7D516 /* MKLabel.swift in Sources */,
 				94C90A781AA9DF1000E7D516 /* UICKeyChainStore.m in Sources */,
+				94C90A821AA9DFD400E7D516 /* SettingsViewController.m in Sources */,
+				94C90A8C1AA9E58200E7D516 /* MKButton.swift in Sources */,
+				94C90A901AA9E58200E7D516 /* MKLayer.swift in Sources */,
 				94C90A3E1AA9D58E00E7D516 /* main.m in Sources */,
 				94C90A7C1AA9DF1000E7D516 /* PQFBouncingBalls.m in Sources */,
 			);
