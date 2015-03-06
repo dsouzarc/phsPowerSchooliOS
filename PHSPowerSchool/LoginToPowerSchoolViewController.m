@@ -28,11 +28,17 @@
     self.webView.delegate = self;
     self.keychain = [[UICKeyChainStore alloc] init];
     
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18", @"UserAgent", nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
+    
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://pschool.princetonk12.org/public/home.html"]]];
     
     if(self.keychain[@"username"] == nil || self.keychain[@"password"] == nil) {
         self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil webView:self.webView];
         [self.settingsViewController showInView:self.view shouldAnimate:YES];
+    }
+    else {
+        [self injectInformation:[self.keychain[@"isStudent"] isEqualToString:@"YES"] username:self.keychain[@"username"] password:self.keychain[@"password"]];
     }
 }
 
@@ -54,21 +60,31 @@
     
     //If we are at the basic login page
     if([currentURL isEqualToString:@"https://pschool.princetonk12.org/public/home.html"]) {
-
-        [self.webView stringByEvaluatingJavaScriptFromString:@"ConfigureLoginBox('Student')"];
-    
-        NSString *loadUsernameJS = [NSString stringWithFormat:@"document.getElementsByName('account')[0].value=''"];
-        NSString *loadPasswordJS = [NSString stringWithFormat:@"document.getElementsByName('pw')[0].value=''"];
-    
-        //autofill the form
-        [self.webView stringByEvaluatingJavaScriptFromString: loadUsernameJS];
-        [self.webView stringByEvaluatingJavaScriptFromString: loadPasswordJS];
-    
-        NSString *yourHTMLSourceCodeString = [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
-        
-        NSLog(yourHTMLSourceCodeString);
+                [self injectInformation:[self.keychain[@"isStudent"] isEqualToString:@"YES"] username:self.keychain[@"username"] password:self.keychain[@"password"]];
     }
+    
+    NSString *yourHTMLSourceCodeString = [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
+    
+    NSLog(yourHTMLSourceCodeString);
 
+}
+
+- (void) injectInformation:(BOOL)isStudent username:(NSString*)username password:(NSString*)password {
+    
+    if(isStudent) {
+        [self.webView stringByEvaluatingJavaScriptFromString:@"ConfigureLoginBox('Student')"];
+    }
+    else {
+        [self.webView stringByEvaluatingJavaScriptFromString:@"ConfigureLoginBox('Guardian')"];
+    }
+    
+    NSString *loadUsernameJS = [NSString stringWithFormat:@"document.getElementsByName('account')[0].value='%@'", username];
+    NSString *loadPasswordJS = [NSString stringWithFormat:@"document.getElementsByName('pw')[0].value='%@'", password];
+    
+    //autofill the form
+    [self.webView stringByEvaluatingJavaScriptFromString: loadUsernameJS];
+    [self.webView stringByEvaluatingJavaScriptFromString: loadPasswordJS];
+    NSLog(@"Finished");
 }
 
 - (void) webViewDidStartLoad:(UIWebView *)webView

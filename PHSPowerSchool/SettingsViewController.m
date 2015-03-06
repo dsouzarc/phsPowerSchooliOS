@@ -128,7 +128,6 @@
     
     [self injectInformation:[self.studentAccountSwitch isOn] username:self.usernameTextField.text password:self.passwordTextField.text];
     [self removeAnimate];
-        NSLog(@"Finished");
 }
 
 - (void) injectInformation:(BOOL)isStudent username:(NSString*)username password:(NSString*)password {
@@ -146,7 +145,6 @@
     //autofill the form
     [self.webView stringByEvaluatingJavaScriptFromString: loadUsernameJS];
     [self.webView stringByEvaluatingJavaScriptFromString: loadPasswordJS];
-    NSLog(@"Finished");
 }
 
 @end
