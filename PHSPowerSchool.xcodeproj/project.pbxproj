@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94C329AD1AAAB9A200741F06 /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C329AC1AAAB9A200741F06 /* Assignment.m */; };
 		94C90A3E1AA9D58E00E7D516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A3D1AA9D58E00E7D516 /* main.m */; };
 		94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A401AA9D58E00E7D516 /* AppDelegate.m */; };
 		94C90A441AA9D58E00E7D516 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A431AA9D58E00E7D516 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94C329AB1AAAB9A200741F06 /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
+		94C329AC1AAAB9A200741F06 /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
 		94C90A381AA9D58E00E7D516 /* PHSPowerSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHSPowerSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C90A3C1AA9D58E00E7D516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94C90A3D1AA9D58E00E7D516 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				94C90A611AA9D58E00E7D516 /* LoginToPowerSchoolViewController.h */,
 				94C90A621AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m */,
 				94C90A631AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib */,
+				94C329AB1AAAB9A200741F06 /* Assignment.h */,
+				94C329AC1AAAB9A200741F06 /* Assignment.m */,
 				94C90A3F1AA9D58E00E7D516 /* AppDelegate.h */,
 				94C90A401AA9D58E00E7D516 /* AppDelegate.m */,
 				94C90A421AA9D58E00E7D516 /* ViewController.h */,
@@ -397,6 +402,7 @@
 				94C90A921AA9E58200E7D516 /* MKTextField.swift in Sources */,
 				94C90A911AA9E58200E7D516 /* MKTableViewCell.swift in Sources */,
 				94C90A8F1AA9E58200E7D516 /* MKLabel.swift in Sources */,
+				94C329AD1AAAB9A200741F06 /* Assignment.m in Sources */,
 				94C90A781AA9DF1000E7D516 /* UICKeyChainStore.m in Sources */,
 				94C90A821AA9DFD400E7D516 /* SettingsViewController.m in Sources */,
 				94ED2D011AAA19DB00692469 /* StudentCIass.m in Sources */,
