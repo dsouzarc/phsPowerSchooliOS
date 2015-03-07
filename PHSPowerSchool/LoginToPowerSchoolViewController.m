@@ -14,6 +14,7 @@
 #import "StudentCIass.h"
 #import "CiassInformation.h"
 #import "SettingsViewController.h"
+#import "Assignment.h"
 
 @interface LoginToPowerSchoolViewController ()
 
@@ -62,18 +63,37 @@
     NSString *className = ((TFHppleElement*)classInformation[1]).text;
     NSString *grade = ((TFHppleElement*)classInformation[7]).text;
     
+    NSMutableArray *allAssignments = [[NSMutableArray alloc] init];
+    
     for (int i = 5; i < tutorialsNodes.count - 1; i++) {
         TFHppleElement *entireClass = (TFHppleElement*)[tutorialsNodes objectAtIndex:i];
         NSArray *assignmentDetails = [entireClass children];
         
-        for(int y = 0; y < assignmentDetails.count; y++) {
-            TFHppleElement *value = (TFHppleElement*)assignmentDetails[y];
-            
-            if(value.content.length > 0) {
-                NSLog(@"%i\t%i\t%@", i, y, value.content);
-            }
-        }
+        NSString *date = ((TFHppleElement*)assignmentDetails[1]).content;
+        NSString *type = ((TFHppleElement*)assignmentDetails[3]).content;
+        NSString *name = ((TFHppleElement*)assignmentDetails[5]).content;
+        
+        NSArray *score = [self parseAssignmentGrade:((TFHppleElement*)assignmentDetails[17]).content];
+        
+        NSString *pointsAwarded = (NSString*)score[0];
+        NSString *totalPoints = (NSString*)score[1];
+        
+        NSString *letterGrade = ((TFHppleElement*)assignmentDetails[21]).content;
+        
+        Assignment *assignment = [[Assignment alloc] initWithEverything:date assignmentType:type assignmentTitle:name pointsAwarded:pointsAwarded totalPoints:totalPoints asignmentLetterGrade:letterGrade];
+        
+        [allAssignments addObject:assignment];
     }
+    
+    for(Assignment *assignment in allAssignments) {
+        NSLog(@"%@\n\n", assignment);
+    }
+}
+
+- (NSArray*) parseAssignmentGrade:(NSString*)originalGrade
+{
+    NSArray *score = [originalGrade componentsSeparatedByString:@"/"];
+    return score;
 }
 
 

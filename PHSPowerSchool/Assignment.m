@@ -11,8 +11,8 @@
 @implementation Assignment
 
 - (instancetype) initWithEverything:(NSString *)assignmentDate assignmentType:(NSString *)assignmentType
-                    assignmentTitle:(NSString *)assignmentTitle pointsAwarded:(NSInteger)pointsAwarded
-                        totalPoints:(NSInteger)totalPoints asignmentLetterGrade:(NSString *)letterGrade
+                    assignmentTitle:(NSString *)assignmentTitle pointsAwarded:(NSString*)pointsAwarded
+                        totalPoints:(NSString*)totalPoints asignmentLetterGrade:(NSString *)letterGrade
 {
     self = [super init];
     
@@ -34,10 +34,9 @@
     [result appendString:self.assignmentTitle];
     
     [result appendString:[NSString stringWithFormat:@"\t%@", self.assignmentDate]];
-    [result appendString:[NSString stringWithFormat:@"\t%@", self.assignmentDate]];
     [result appendString:[NSString stringWithFormat:@"\t%@", self.assignmentType]];
     [result appendString:[NSString stringWithFormat:@"\t%@", self.assignmentLetterGrade]];
-    [result appendString:[NSString stringWithFormat:@"\t%ld/%ld", (long)self.pointsAwarded, (long)self.totalPoints]];
+    [result appendString:[NSString stringWithFormat:@"\t%@/%@", self.pointsAwarded, self.totalPoints]];
     return result;
 }
 
