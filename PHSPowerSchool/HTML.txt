@@ -1,55 +1,41 @@
-2015-03-06 07:24:13.920 PHSLabDays[18328:831411]
-
-Here 1
-2015-03-06 07:24:13.925 PHSLabDays[18328:831411] <html class="responsive"><head>
-<title>Grades and Attendance</title>
+<html>
+<head>
+<title>Class Score Detail</title>
 <!-- Page Redirect -->
-
-
-
 <!-- End Page Redirect Code -->
-
-<script language="JavaScript">
-var pref=1;
-</script>
-
-
-<script language="JavaScript" src="/scripts/mobile/detectMobileWebkit.js"></script>
-
-
 <meta http-equiv="X-UA-Compatible" content="IE=8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta name="apple-mobile-web-app-status-bar-style" content="yes">
 <link href="/images/css/screen.css" rel="stylesheet" type="text/css" media="screen">
 <link href="/images/css/print.css" rel="stylesheet" type="text/css" media="print">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
 <script language="JavaScript" src="eppdailyredirect.txt" type="text/javascript"></script>
-
 <style>
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
 </style>
-
 <!-- ServerInstanceId: 266 -->
-<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
-<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.common.sign_in"] = "Sign In";_messages["psx.common.district_abbreviation"] = "District";_messages["psx.common.daynamesmin_wed"] = "We";_messages["psx.common.daynamesletter_wed"] = "W";_messages["psx.common.daynamesmin_tue"] = "Tu";_messages["psx.common.daynamesmin_sun"] = "Su";_messages["psx.common.daynamesmin_thu"] = "Th";_messages["psx.common.daynamesletter_tue"] = "T";_messages["psx.common.daynamesletter_thu"] = "H";_messages["psx.common.daynamesmin_sat"] = "Sa";_messages["psx.common.district"] = "District Office";_messages["psx.common.sign_in_title"] = "Sign In";_messages["psx.common.daynamesletter_sat"] = "S";_messages["psx.common.daynamesletter_sun"] = "S";_messages["psx.common.daynamesshort_wed"] = "Wed";_messages["psx.common.changes_recorded"] = "The changes have been recorded.";_messages["psx.common.sign_out"] = "Sign Out";_messages["psx.common.daynamesletter_mon"] = "M";_messages["psx.common.daynamesshort_sat"] = "Sat";_messages["psx.common.daynamesshort_sun"] = "Sun";_messages["psx.common.daynamesshort_tue"] = "Tue";_messages["psx.common.daynamesshort_thu"] = "Thu";_messages["psx.common.monthnamesshort_sep"] = "Sep";_messages["psx.common.daynamesmin_fri"] = "Fr";_messages["psx.common.daynamesletter_fri"] = "F";_messages["psx.common.mydata_button_title"] = "MyData Button";_messages["psx.common.help_title"] = "Help";_messages["psx.common.translate_page_title"] = "Localize Page";_messages["psx.common.school"] = "School:";_messages["psx.common.monthnamesshort_jan"] = "Jan";_messages["psx.common.school_title"] = "Change School";_messages["psx.common.monthnamesshort_jul"] = "Jul";_messages["psx.common.monthnamesshort_jun"] = "Jun";_messages["psx.common.legend"] = "Legend ";_messages["psx.common.monthnamesshort_nov"] = "Nov";_messages["psx.common.daynamesmin_mon"] = "Mo";_messages["psx.common.alleyoop_data_title"] = "Alleyoop";_messages["psx.common.monthnamesshort_oct"] = "Oct";_messages["psx.common.monthnamesshort_mar"] = "Mar";_messages["psx.common.monthnamesshort_may"] = "May";_messages["psx.common.monthnames_dec"] = "December";_messages["psx.common.monthnamesshort_dec"] = "Dec";_messages["psx.common.scheduling_year"] = "Scheduling Year";_messages["psx.common.monthnamesshort_feb"] = "Feb";_messages["psx.common.monthnames_aug"] = "August";_messages["psx.common.monthnames_apr"] = "April";_messages["psx.common.term"] = "Term:";_messages["psx.common.daynames_fri"] = "Friday";_messages["psx.common.term_title"] = "Change Term";_messages["psx.common.general.problem"] = "Unable to process the request.  Please contact your system administrator to review logs.";_messages["psx.common.monthnamesshort_apr"] = "Apr";_messages["psx.common.monthnamesshort_aug"] = "Aug";_messages["psx.common.monthnames_feb"] = "February";_messages["psx.common.print_title"] = "Print this page";_messages["psx.common.monthnames_mar"] = "March";_messages["psx.common.monthnames_may"] = "May";_messages["psx.common.monthnames_jun"] = "June";_messages["psx.common.monthnames_jul"] = "July";_messages["psx.common.loading"] = "Loading...";_messages["psx.common.monthnames_jan"] = "January";_messages["psx.common.monthnames_oct"] = "October";_messages["psx.common.monthnames_nov"] = "November";_messages["psx.common.sign_out_title"] = "Sign Out";_messages["psx.common.welcome"] = "Welcome,";_messages["psx.common.monthnames_sep"] = "September";_messages["psx.common.daynames_wed"] = "Wednesday";_messages["psx.common.daynames_thu"] = "Thursday";_messages["psx.common.daynamesshort_mon"] = "Mon";_messages["psx.common.daynames_tue"] = "Tuesday";_messages["psx.common.help"] = "Help";_messages["psx.common.daynames_sun"] = "Sunday";_messages["psx.common.daynamesshort_fri"] = "Fri";_messages["psx.common.daynames_sat"] = "Saturday";_messages["psx.common.copyright"] = "Copyright&copy; 2005 - 2014 Pearson Education, Inc., or its affiliate(s). All rights reserved.";_messages["psx.common.daynames_mon"] = "Monday";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
-<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.js.scripts.psbehaviors.no"] = "No";_messages["psx.js.scripts.psbehaviors.on"] = "On";_messages["psx.js.scripts.psbehaviors.or"] = "or";_messages["psx.js.scripts.psbehaviors.wiznext"] = "Next";_messages["psx.js.scripts.psbehaviors.time_entry_x"] = "Time Entry ({0})";_messages["psx.js.scripts.psbehaviors.recording_cancel"] = "Cancel Recording";_messages["psx.js.scripts.psbehaviors.time_entry"] = "Time Entry";_messages["psx.js.scripts.psbehaviors.report_an_issue"] = "Report an Issue";_messages["psx.js.scripts.psbehaviors.prevtext"] = "Prev";_messages["psx.js.scripts.psbehaviors.wizprevious"] = "Previous";_messages["psx.js.scripts.psbehaviors.closetext"] = "Done";_messages["psx.js.scripts.psbehaviors.reload_last_page"] = "Reload Last Page";_messages["psx.js.scripts.psbehaviors.enrollment_alert"] = "The student you are attempting to enroll has an existing record in the district. Click OK, then proceed to transfer the student to your school if necessary.";_messages["psx.js.scripts.psbehaviors.currenttext"] = "Today";_messages["psx.js.scripts.psbehaviors.interval_hour"] = "hour only interval";_messages["psx.js.scripts.psbehaviors.would_you_like_to_reload_the_last_page_you_were_viewing"] = "Your session timed out due to inactivity. Would you like to restore your previous session and reload the last page you were viewing?";_messages["psx.js.scripts.psbehaviors.cancel"] = "Cancel";_messages["psx.js.scripts.psbehaviors.nexttext"] = "Next";_messages["psx.js.scripts.psbehaviors.restore_selections_school_and_term"] = "Restore Selection(s), School and Term";_messages["psx.js.scripts.psbehaviors.noaccess"] = "No Field Access";_messages["psx.js.scripts.psbehaviors.no_match_found"] = "No match found";_messages["psx.js.scripts.psbehaviors.added"] = "Added";_messages["psx.js.scripts.psbehaviors.interval_thirty"] = "30 minute interval";_messages["psx.js.scripts.psbehaviors.deleted_xx"] = "Deleted: {0}";_messages["psx.js.scripts.psbehaviors.interval_fifteen"] = "15 minute interval";_messages["psx.js.scripts.psbehaviors.deleted"] = "Deleted";_messages["psx.js.scripts.psbehaviors.delete"] = "Delete";_messages["psx.js.scripts.psbehaviors.icons"] = "Icons";_messages["psx.js.scripts.psbehaviors.show_main_menu"] = "Show Main Menu";_messages["psx.js.scripts.psbehaviors.confirm"] = "Confirm ";_messages["psx.js.scripts.psbehaviors.wizstep"] = "Step";_messages["psx.js.scripts.psbehaviors.show_header"] = "Show Header";_messages["psx.js.scripts.psbehaviors.hide_header"] = "Hide Header";_messages["psx.js.scripts.psbehaviors.interval_five"] = "5 minute interval";_messages["psx.js.scripts.psbehaviors.date_entry"] = "Date Entry";_messages["psx.js.scripts.psbehaviors.confirm_delete"] = "Confirm Delete";_messages["psx.js.scripts.psbehaviors.off"] = "Off";_messages["psx.js.scripts.psbehaviors.would_you_like_to_restore_your_selections_school_and_term"] = "Your session timed out due to inactivity. Would you like to restore your previous session and return to the last used school, term, student and/or teacher selection?";_messages["psx.js.scripts.psbehaviors.send_report"] = "Report Issue";_messages["psx.js.scripts.psbehaviors.recording_stop"] = "Finish Recording";_messages["psx.js.scripts.psbehaviors.n_characters_left"] = "{0} characters left";_messages["psx.js.scripts.psbehaviors.about_n_characters_left"] = "Approximately {0} characters left";_messages["psx.js.scripts.psbehaviors.legend"] = "Legend";_messages["psx.js.scripts.psbehaviors.hide_main_menu"] = "Hide Main Menu";_messages["psx.js.scripts.psbehaviors.recording_start"] = "Start Recording";_messages["psx.js.scripts.psbehaviors.add_issue_comment"] = "Add Issue Comment";_messages["psx.js.scripts.psbehaviors.required"] = "Required Field";_messages["psx.js.scripts.psbehaviors.yes"] = "Yes";_messages["psx.js.scripts.psbehaviors.main_navigation"] = "Main Navigation";_messages["psx.js.scripts.psbehaviors.confirmbanner.schoolstaff_removed"] = "The previously selected staff member was successfully removed from this school.";_messages["psx.js.scripts.psbehaviors.added_xx"] = "Added: {0}";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
-
+<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }
+</script>
+<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.common.sign_in"] = "Sign In";_messages["psx.common.district_abbreviation"] = "District";_messages["psx.common.daynamesmin_wed"] = "We";_messages["psx.common.daynamesletter_wed"] = "W";_messages["psx.common.daynamesmin_tue"] = "Tu";_messages["psx.common.daynamesmin_sun"] = "Su";_messages["psx.common.daynamesmin_thu"] = "Th";_messages["psx.common.daynamesletter_tue"] = "T";_messages["psx.common.daynamesletter_thu"] = "H";_messages["psx.common.daynamesmin_sat"] = "Sa";_messages["psx.common.district"] = "District Office";_messages["psx.common.sign_in_title"] = "Sign In";_messages["psx.common.daynamesletter_sat"] = "S";_messages["psx.common.daynamesletter_sun"] = "S";_messages["psx.common.daynamesshort_wed"] = "Wed";_messages["psx.common.changes_recorded"] = "The changes have been recorded.";_messages["psx.common.sign_out"] = "Sign Out";_messages["psx.common.daynamesletter_mon"] = "M";_messages["psx.common.daynamesshort_sat"] = "Sat";_messages["psx.common.daynamesshort_sun"] = "Sun";_messages["psx.common.daynamesshort_tue"] = "Tue";_messages["psx.common.daynamesshort_thu"] = "Thu";_messages["psx.common.monthnamesshort_sep"] = "Sep";_messages["psx.common.daynamesmin_fri"] = "Fr";_messages["psx.common.daynamesletter_fri"] = "F";_messages["psx.common.mydata_button_title"] = "MyData Button";_messages["psx.common.help_title"] = "Help";_messages["psx.common.translate_page_title"] = "Localize Page";_messages["psx.common.school"] = "School:";_messages["psx.common.monthnamesshort_jan"] = "Jan";_messages["psx.common.school_title"] = "Change School";_messages["psx.common.monthnamesshort_jul"] = "Jul";_messages["psx.common.monthnamesshort_jun"] = "Jun";_messages["psx.common.legend"] = "Legend ";_messages["psx.common.monthnamesshort_nov"] = "Nov";_messages["psx.common.daynamesmin_mon"] = "Mo";_messages["psx.common.alleyoop_data_title"] = "Alleyoop";_messages["psx.common.monthnamesshort_oct"] = "Oct";_messages["psx.common.monthnamesshort_mar"] = "Mar";_messages["psx.common.monthnamesshort_may"] = "May";_messages["psx.common.monthnames_dec"] = "December";_messages["psx.common.monthnamesshort_dec"] = "Dec";_messages["psx.common.scheduling_year"] = "Scheduling Year";_messages["psx.common.monthnamesshort_feb"] = "Feb";_messages["psx.common.monthnames_aug"] = "August";_messages["psx.common.monthnames_apr"] = "April";_messages["psx.common.term"] = "Term:";_messages["psx.common.daynames_fri"] = "Friday";_messages["psx.common.term_title"] = "Change Term";_messages["psx.common.general.problem"] = "Unable to process the request.  Please contact your system administrator to review logs.";_messages["psx.common.monthnamesshort_apr"] = "Apr";_messages["psx.common.monthnamesshort_aug"] = "Aug";_messages["psx.common.monthnames_feb"] = "February";_messages["psx.common.print_title"] = "Print this page";_messages["psx.common.monthnames_mar"] = "March";_messages["psx.common.monthnames_may"] = "May";_messages["psx.common.monthnames_jun"] = "June";_messages["psx.common.monthnames_jul"] = "July";_messages["psx.common.loading"] = "Loading...";_messages["psx.common.monthnames_jan"] = "January";_messages["psx.common.monthnames_oct"] = "October";_messages["psx.common.monthnames_nov"] = "November";_messages["psx.common.sign_out_title"] = "Sign Out";_messages["psx.common.welcome"] = "Welcome,";_messages["psx.common.monthnames_sep"] = "September";_messages["psx.common.daynames_wed"] = "Wednesday";_messages["psx.common.daynames_thu"] = "Thursday";_messages["psx.common.daynamesshort_mon"] = "Mon";_messages["psx.common.daynames_tue"] = "Tuesday";_messages["psx.common.help"] = "Help";_messages["psx.common.daynames_sun"] = "Sunday";_messages["psx.common.daynamesshort_fri"] = "Fri";_messages["psx.common.daynames_sat"] = "Saturday";_messages["psx.common.copyright"] = "Copyright&copy; 2005 - 2014 Pearson Education, Inc., or its affiliate(s). All rights reserved.";_messages["psx.common.daynames_mon"] = "Monday";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }
+</script>
+<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.js.scripts.psbehaviors.no"] = "No";_messages["psx.js.scripts.psbehaviors.on"] = "On";_messages["psx.js.scripts.psbehaviors.or"] = "or";_messages["psx.js.scripts.psbehaviors.wiznext"] = "Next";_messages["psx.js.scripts.psbehaviors.time_entry_x"] = "Time Entry ({0})";_messages["psx.js.scripts.psbehaviors.recording_cancel"] = "Cancel Recording";_messages["psx.js.scripts.psbehaviors.time_entry"] = "Time Entry";_messages["psx.js.scripts.psbehaviors.report_an_issue"] = "Report an Issue";_messages["psx.js.scripts.psbehaviors.prevtext"] = "Prev";_messages["psx.js.scripts.psbehaviors.wizprevious"] = "Previous";_messages["psx.js.scripts.psbehaviors.closetext"] = "Done";_messages["psx.js.scripts.psbehaviors.reload_last_page"] = "Reload Last Page";_messages["psx.js.scripts.psbehaviors.enrollment_alert"] = "The student you are attempting to enroll has an existing record in the district. Click OK, then proceed to transfer the student to your school if necessary.";_messages["psx.js.scripts.psbehaviors.currenttext"] = "Today";_messages["psx.js.scripts.psbehaviors.interval_hour"] = "hour only interval";_messages["psx.js.scripts.psbehaviors.would_you_like_to_reload_the_last_page_you_were_viewing"] = "Your session timed out due to inactivity. Would you like to restore your previous session and reload the last page you were viewing?";_messages["psx.js.scripts.psbehaviors.cancel"] = "Cancel";_messages["psx.js.scripts.psbehaviors.nexttext"] = "Next";_messages["psx.js.scripts.psbehaviors.restore_selections_school_and_term"] = "Restore Selection(s), School and Term";_messages["psx.js.scripts.psbehaviors.noaccess"] = "No Field Access";_messages["psx.js.scripts.psbehaviors.no_match_found"] = "No match found";_messages["psx.js.scripts.psbehaviors.added"] = "Added";_messages["psx.js.scripts.psbehaviors.interval_thirty"] = "30 minute interval";_messages["psx.js.scripts.psbehaviors.deleted_xx"] = "Deleted: {0}";_messages["psx.js.scripts.psbehaviors.interval_fifteen"] = "15 minute interval";_messages["psx.js.scripts.psbehaviors.deleted"] = "Deleted";_messages["psx.js.scripts.psbehaviors.delete"] = "Delete";_messages["psx.js.scripts.psbehaviors.icons"] = "Icons";_messages["psx.js.scripts.psbehaviors.show_main_menu"] = "Show Main Menu";_messages["psx.js.scripts.psbehaviors.confirm"] = "Confirm ";_messages["psx.js.scripts.psbehaviors.wizstep"] = "Step";_messages["psx.js.scripts.psbehaviors.show_header"] = "Show Header";_messages["psx.js.scripts.psbehaviors.hide_header"] = "Hide Header";_messages["psx.js.scripts.psbehaviors.interval_five"] = "5 minute interval";_messages["psx.js.scripts.psbehaviors.date_entry"] = "Date Entry";_messages["psx.js.scripts.psbehaviors.confirm_delete"] = "Confirm Delete";_messages["psx.js.scripts.psbehaviors.off"] = "Off";_messages["psx.js.scripts.psbehaviors.would_you_like_to_restore_your_selections_school_and_term"] = "Your session timed out due to inactivity. Would you like to restore your previous session and return to the last used school, term, student and/or teacher selection?";_messages["psx.js.scripts.psbehaviors.send_report"] = "Report Issue";_messages["psx.js.scripts.psbehaviors.recording_stop"] = "Finish Recording";_messages["psx.js.scripts.psbehaviors.n_characters_left"] = "{0} characters left";_messages["psx.js.scripts.psbehaviors.about_n_characters_left"] = "Approximately {0} characters left";_messages["psx.js.scripts.psbehaviors.legend"] = "Legend";_messages["psx.js.scripts.psbehaviors.hide_main_menu"] = "Hide Main Menu";_messages["psx.js.scripts.psbehaviors.recording_start"] = "Start Recording";_messages["psx.js.scripts.psbehaviors.add_issue_comment"] = "Add Issue Comment";_messages["psx.js.scripts.psbehaviors.required"] = "Required Field";_messages["psx.js.scripts.psbehaviors.yes"] = "Yes";_messages["psx.js.scripts.psbehaviors.main_navigation"] = "Main Navigation";_messages["psx.js.scripts.psbehaviors.confirmbanner.schoolstaff_removed"] = "The previously selected staff member was successfully removed from this school.";_messages["psx.js.scripts.psbehaviors.added_xx"] = "Added: {0}";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }
+</script>
 <script src="/scripts/jquery-1.9.1.min.js"></script>
 <script src="/scripts/jquery-migrate-1.1.1.min.js"></script>
 <script src="/scripts/jquery-ui-1.10.2.custom.min.js"></script>
 <script src="/scripts/requirejs/require.js"></script>
-
-
-<!--[if lt IE 7]><script>jQuery('html').data('ltie', 7.addClass('ltie7');;</script><![endif]-->
-<!--[if lt IE 8]<script>jQuery('html').data('ltie', 8).addClass('ltie8');;</script><![endif]-->
-<!--[if lt IE 9]><script>jQuery('html').data('ltie', 9).addClass('ltie9');</script><![endif]-->
-
+<!--[if lt IE 7]>
+<script>jQuery('html').data('ltie', 7.addClass('ltie7');;</script>
+<![endif]-->
+<!--[if lt IE 8]<script>jQuery('html').data('ltie', 8).addClass('ltie8');;</script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script>jQuery('html').data('ltie', 9).addClass('ltie9');</script>
+<![endif]-->
 <script type="text/javascript">
 var feedbackEnabled = false
 var recordingActivated = false
 </script>
-
 <script src="/scripts/psutils.js"></script>
 <script type="text/javascript">
 /**
@@ -125,12 +111,9 @@ return $.ui;
 });
 </script>
 <script src="/scripts/psbehaviors.js"></script>
-
 <script src="/scripts/keep-alive.js"></script>
-
-
-<!-- Frame type=none --><meta id="keep-alive-config" content="20">
-
+<!-- Frame type=none -->
+<meta id="keep-alive-config" content="20">
 <script type="text/javascript">
 
 /**
@@ -258,6 +241,7 @@ function localizeCurrency(number)
 return formatNumber(get_currency_format(), number);
 }
 
+
 <!-- This function return a json object with numeric formatting info -->
 function get_numeric_format() {
 return  { format: '#,##0.#########',
@@ -267,6 +251,7 @@ ds: '.',
 regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?)))' };
 ;
 }
+
 
 <!-- This function return a json object with currency formating info -->
 function get_currency_format() {
@@ -278,33 +263,40 @@ regex: '([-]?(([0-9]{1,3}(,[0-9]{3})*(\\.[0-9]+)?|\\.[0-9]+)|([0-9]*(\\.[0-9]+)?
 ;
 }
 
+
 <!-- This function return date format in machine readable form -->
 function get_short_date_format() {
 return "M/d/yy";
 }
+
 <!-- This function return date format in machine readable form -->
 function get_date_format() {
 return "MM/dd/yyyy";
 }
 
+
 <!-- This function return date format in human readable form -->
 function get_date_text(){
 return "MM/DD/YYYY";
 }
+
 <!-- This function return date format in human readable form -->
 function get_short_date_text(){
 return "MM/DD/YY";
 }
+
 
 <!-- This function return time format in machine readable form without seconds-->
 function get_HHMMTime_format() {
 return "hh:mm a";
 }
 
+
 <!-- This function return time format in machine readable form with seconds-->
 function get_HHMMSSTime_format() {
 return "hh:mm:ss a";
 }
+
 
 <!-- This function return ante/post meridian in machine readable form -->
 function get_AMPM(ampm) {
@@ -531,11 +523,12 @@ return !noNumbers(e);
 }
 
 function decodeText(text) {
-return $j("<div/>").html(text).text();
+return $j("
+<div/>").html(text).text();
 }
 
-</script>
 
+</script>
 <script type="application/x-javascript">
 addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 
@@ -544,11 +537,10 @@ window.scrollTo(0,1);
 }
 </script>
 <!-- iPhone Scripts introduced for parent access -->
-<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }</script>
+<script type="text/javascript">if(!_messages)var _messages = {};_messages["psx.js.admin_javascript.validate_date.month_must_be_between_1_and_12"] = "Month must be between 1 and 12.";_messages["psx.js.admin_javascript.validate_date._doesnt_have_31_days"] = " doesn't have 31 days.";_messages["psx.js.admin_javascript.validate_date.day_must_be_between_1_and_31"] = "Day must be between 1 and 31.";_messages["psx.js.admin_javascript.validate_date.february_"] = "February ";_messages["psx.js.admin_javascript.validate_date.date_format_must_be"] = "Date format must be ({0}).";_messages["psx.js.admin_javascript.validate_date._doesnt_have_"] = " doesn't have ";_messages["psx.js.admin_javascript.validate_date._days"] = " days.";_messages["psx.js.admin_javascript.validate_date.month_1"] = "Month ";if (typeof pss_text != 'function') { function pss_text(key, params, returnKeyIfNotFound) { if (_messages[key] === undefined) { if (returnKeyIfNotFound !== undefined && returnKeyIfNotFound === true) {return key;} else {return 'String key was not found!'; }}if(params == null || params.length == 0) {return _messages[key]; }else { msg = _messages[key]; for ( i = 0; i < params.length; i++) {token = "{"+i+"}"; msg = msg.replace(token, params[i]); }return msg;} } }
+</script>
 <script language="JavaScript" type="text/javascript" src="/admin/JavaScript/validate_date.js"></script>
-
 <link rel="shortcut icon" href="/favicon.ico">
-
 <style type="text/css">
 #btn-access-log a {background: url(iconAccessLog.png) no-repeat;}
 #btn-demographic-update a {background: url(iconDemographicUpdate.png) no-repeat;}
@@ -566,67 +558,74 @@ window.scrollTo(0,1);
 #btn-standardsgradehistory a {background: url(/images/img/iconGradeHist.png) no-repeat;}
 #btn-buzzbook a {background: url(/images/img/iconbuzz.png) no-repeat;}
 </style>
-<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="psValidationFunctions" src="/scripts/psValidationFunctions.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.cookie" src="/scripts/jquery.cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="/scripts/underscore/underscore-min-1.4.4.js"></script></head>
-
-
-
-<body id="parentPageTemp" class="psparent uiNoNav">
-
+</head>
+<body id="parentPageTemp" class="psparent">
 <div id="container" class="group">
-
 <!-- start of shell for entire page  -->
 <!-- start logo, school, term, logoff, help -->
 <div id="header" class="group">
 <ul id="tools">
-<li id="userName" title=" (Last Sign In:&nbsp;03/06/2015 at 07:21 AM was signed out because multiple, concurrent sessions are not allowed.)">Welcome,
+<li id="userName" title=" (Last Sign In:&nbsp;03/06/2015 at 05:30 PM timed out.)">Welcome,
+
 <!-- Render either the guardian name or the student name. Guardian name is rendered by the brij tag above -->
 <span>
 
-Ryan D'souza
+Premila  Dsouza
+
+
 
 </span>
 </li>
-<li>&nbsp;Today is:&nbsp;<b>03/06/2015 (D)</b>&nbsp;</li>
-<li><a href="javascript:helpwindow('/public/help/how_to/pa_03a_grades_attendance.html')" title="Help">Help</a></li>
-<li><a href="home.html?ac=logoff" id="btnLogout" target="_top" title="Sign Out" accesskey="l">Sign Out</a></li>
+<li>&nbsp;Today is:&nbsp;
+<b>03/06/2015 ()</b>&nbsp;
+</li>
+<li>
+<a href="javascript:helpwindow('/public/help/how_to/pa_03b_grades_history.html')" title="Help">Help</a>
+</li>
+<li>
+<a href="home.html?ac=logoff" id="btnLogout" target="_top" title="Sign Out" accesskey="l">Sign Out</a>
+</li>
 </ul>
 <div id="branding-powerschool">
 <a href="/guardian/home.html" tabindex="0">&nbsp;</a>
 </div>
 <div id="cust-content-header"></div>
-
 <!--
-<ul id="nav-main">
-
-
-<li id="btn-myCalendars"><a href="mycalendars.html">My Calendars</a></li>
-
-<li id="btn-classRegistration"><a href="requestform.html">Class Registration</a></li>
-<li id="btn-schoolBulletin"><a href="bulletin_popup.html">School Bulletin</a></li>
-<li id="btn-teacherComments"><a href="teachercomments.html">Teacher Comments</a></li>
-
-<li id="btn-attendanceHistory"><a href="attendance.html">Attendance History</a></li>
-<li id="btn-gradesHistory"><a href="termgrades.html">Grade History</a></li>
-<li id="btn-gradesAttendance"><a href="home.html">Grades and Attendance</a></li>
-</ul>
+<ul id="nav-main"><li id="btn-accountPreferences"><a href="accountmanagement_profile.html">Account Preferences</a></li><li id="btn-myCalendars"><a href="mycalendars.html">My Calendars</a></li><li id="btn-classRegistration"><a href="requestform.html">Class Registration</a></li><li id="btn-schoolBulletin"><a href="bulletin_popup.html">School Bulletin</a></li><li id="btn-teacherComments"><a href="teachercomments.html">Teacher Comments</a></li><li id="btn-emailNotification"><a href="autoemailsetup.html">Email Notification</a></li><li id="btn-attendanceHistory"><a href="attendance.html">Attendance History</a></li><li id="btn-gradesHistory"><a href="termgrades.html">Grade History</a></li><li id="btn-gradesAttendance"><a href="home.html">Grades and Attendance</a></li></ul>
 -->
-
 </div>
-<div id="print-school">D'souza, Ryan<br>Princeton Public Schools<br><span>Princeton High School</span></div>
+<div id="print-school">D'souza, Lisa R
+<br>Princeton Public Schools
+<br>
+<span>Princeton High School</span>
+</div>
 <!-- end logo, school, term, logoff, help -->
 <div id="usercontext-bar" class="group">
 <!-- PA-73: Render list of associated students if  the user is a guardian -->
-
-<div id="students-list" style="width:75">&nbsp;</div>
-
-
-<!-- PA-448: A form to hold a hidden input html value to indicate the currently selected student id.
-Submitting a form with currently selected student id as a hidden input will prevent clear display of student id in the url -->
-<form id="switch_student_form" action="/guardian/home.html" method="post" class="submitOnce">
+<ul id="students-list">
+<li class="selected">
+<a href="javascript:switchStudent(9115);">Lisa</a>
+</li>
+<li>
+<a href="javascript:switchStudent(7403);">Ryan</a>
+</li>
+</ul>
+<input type="hidden" id="parentName" value="Premila  Dsouza">
+<form id="switch_student_form" action="home.html" method="post" class="submitOnce">
 <input type="hidden" name="selected_student_id">
 </form>
-
-
+<script type="text/javascript">
+function switchStudent(studentId){
+var switchStudentForm = document.getElementById('switch_student_form');
+switchStudentForm.selected_student_id.value=studentId;
+switchStudentForm.submit();
+}
+</script>
+<!-- PA-448: A form to hold a hidden input html value to indicate the currently selected student id.
+Submitting a form with currently selected student id as a hidden input will prevent clear display of student id in the url -->
+<form id="switch_student_form" action="/guardian/scores.html?frn=031922193&amp;fg=Q1" method="post" class="submitOnce">
+<input type="hidden" name="selected_student_id">
+</form>
 <!-- Script to set the selected_student_id and submit the form to retrieve data belonging to the currently selected student
 Consolidating all the logic related to switching the student into this ftl will improve code readability" -->
 <script type="text/javascript">
@@ -637,319 +636,411 @@ switchStudentForm.submit();
 }
 </script>
 <ul id="tools2">
-
-
-<li class="icon-btn-download"><a title="Alleyoop" href="studentdata.xml?ac=download">&nbsp;</a></li>
-
-<li id="notifIcon"><a href="/guardian/notification/notificationDetailAJAX.action" onclick="return false;" target="_top" id="btnNotifications" class="dialogC" title="Notifications">&nbsp;</a></li>
-
-
-
-
-
-<li class="icon-btn-print" title="Print this page"><a href="javascript:window.print()">&nbsp;</a></li>
+<li class="icon-btn-pluginLinkList">
+<a id="link-icon-btn-pluginLinkList" title="Applications" href="#" onclick="toggleDrawerPanel('pluginLinkDrawerPanel', 'pluginLinkDrawerModalOverlay', 'expanded'); return false;">&nbsp;</a>
+</li>
+<li class="icon-btn-download">
+<a title="Alleyoop" href="studentdata.xml?ac=download">&nbsp;</a>
+</li>
+<li id="notifIcon">
+<a href="/guardian/notification/notificationDetailAJAX.action" onclick="return false;" target="_top" id="btnNotifications" class="dialogC" title="Notifications">&nbsp;</a>
+</li>
+<li class="icon-btn-print" title="Print this page">
+<a href="javascript:window.print()">&nbsp;</a>
+</li>
 </ul>
-
 </div>
 <div id="content" class="group">
-
 <div id="nav-main">
 <h3>Navigation</h3>
 <ul>
-<li id="btn-gradesAttendance" class="selected"><a href="/guardian/home.html">Grades and Attendance</a></li>
-
-
-<li id="btn-historical-grades"><a href="/guardian/historicalgrades.html">Historical Grades</a></li>
-
-
-<li id="btn-attendanceHistory"><a href="/guardian/attendance.html">Attendance History</a></li>
-
-<li id="btn-teacherComments"><a href="/guardian/teachercomments.html">Teacher Comments</a></li>
-
-
-<!--<li id="btn-schoolBulletin"><a dialogContent="/guardian/bulletin_popup.html" class="dialogM" title="View School Bulletin">School Bulletin</a></li>-->
-<li id="btn-schoolBulletin"><a href="/guardian/bulletin2.html" "="">School Bulletin</a></li>
-
-
-
-
-
-<li id="btn-balance"><a href="lunchbal.html">Balance</a></li>
-
-
-<!-- Set for links with no icons -->
-
-
-
-
-<li id="btn-print-transcript"><a href="studentsched.html">My Schedule</a></li>
-<li id="btn-schoolInformation"><a href="schoolinfo.html">School Information</a></li>
-
-
-
-
-
-
-<li>
-<a href="https://princeton.schoolnet.com/saml/SSO.aspx" title="Schoolnet" id="link-567c8deb041a3b7778868c499deeeb01" target="_blank">Schoolnet</a>
+<li id="btn-gradesAttendance" class="selected">
+<a href="/guardian/home.html">Grades and Attendance</a>
 </li>
-
-
+<li id="btn-historical-grades">
+<a href="/guardian/historicalgrades.html">Historical Grades</a>
+</li>
+<li id="btn-attendanceHistory">
+<a href="/guardian/attendance.html">Attendance History</a>
+</li>
+<li id="btn-teacherComments">
+<a href="/guardian/teachercomments.html">Teacher Comments</a>
+</li>
+<!--<li id="btn-schoolBulletin"><a dialogContent="/guardian/bulletin_popup.html" class="dialogM" title="View School Bulletin">School Bulletin</a></li>-->
+<li id="btn-schoolBulletin">
+<a href="/guardian/bulletin2.html" "="">School Bulletin</a>
+</li>
+<li id="btn-balance">
+<a href="lunchbal.html">Balance</a>
+</li>
+<!-- Set for links with no icons -->
+<li id="btn-demographic-update">
+<a href="parentdemographics.html">Demographic Info</a>
+</li>
+<li id="btn-print-transcript">
+<a href="studentsched.html">My Schedule</a>
+</li>
+<li id="btn-schoolInformation">
+<a href="schoolinfo.html">School Information</a>
+</li>
+<li id="btn-accountPreferences">
+<a href="/guardian/accountmanagement_profile.html">Account Preferences</a>
+</li>
 </ul>
 <div id="cust-leftnav-footer"></div>
-
-
 <!--PDS Versioning/Contibutor Information Start-->
 <div id="PDS-EPP-details" style="display:none;">
-<strong>Enhanced Parent Portal:</strong><br>
-<strong>Wildcard Version:</strong> 3.3.3 <br>
-<strong wildcard="" file:<="" strong=""> guardian_header<br>
-<strong>Released:</strong> 8/25/2013<br>
-<strong>Contributors:</strong><br>Brian Andle<br>Jason Treadwell<br>Roger Sprik<br>Matt Freund<br>Michael Moore<br>Rob Staats<br>
-</strong><strong>Current Page Version:</strong> Unknown/Stock</div><strong wildcard="" file:<="" strong="">
+<strong>Enhanced Parent Portal:</strong>
+<br>
+<strong>Wildcard Version:</strong> 3.3.3
+<br>
+<strong wildcard="" file:<="" strong=""> guardian_header
+<br>
+<strong>Released:</strong> 8/25/2013
+<br>
+<strong>Contributors:</strong>
+<br>Brian Andle
+<br>Jason Treadwell
+<br>Roger Sprik
+<br>Matt Freund
+<br>Michael Moore
+<br>Rob Staats
+<br>
+</strong>
+<strong>Current Page Version:</strong> Unknown/Stock
+</div>
+<strong wildcard="" file:<="" strong="">
 <script>
-$j(document).ready(function(){$j('#legal').append('<span id="spanEPPVersion" >Enhanced Parent Portal Customization.</span>');var pageVersion='Unknown/Stock';if($j('#activePageVersion').length!=0){pageVersion=$j('#activePageVersion').val();}$j('#PDS-EPP-details').append('<strong>Current Page Version:</strong> ' + pageVersion);$j('#spanEPPVersion').click(function(){ $j('#PDS-EPP-details').show().dialog({title: 'EPP Version Details', width: 450}); });
+$j(document).ready(function(){$j('#legal').append('
+<span id="spanEPPVersion" >Enhanced Parent Portal Customization.</span>');var pageVersion='Unknown/Stock';if($j('#activePageVersion').length!=0){pageVersion=$j('#activePageVersion').val();}$j('#PDS-EPP-details').append('
+<strong>Current Page Version:</strong> ' + pageVersion);$j('#spanEPPVersion').click(function(){ $j('#PDS-EPP-details').show().dialog({title: 'EPP Version Details', width: 450}); });
 });
+
 </script>
 <!--PDS Versioning/Contibutor Information End-->
-
-</strong></div><strong wildcard="" file:<="" strong="">
-
-<div id="content-main" class="group"><div id="btnContMax" class="collapsed" title="Hide Header"><em>&nbsp;</em></div><div id="btnNoNav" class="expanded" title="Show Main Menu"><em>&nbsp;</em></div>
-
-
-
-
-<h1>Grades and Attendance: D'souza, Ryan</h1>
-<div class="box-round group">
-<br><br>
-<ul id="nav-secondary" class="tabs">
-<li class="selected">
-<a href="#">Grades&nbsp;and&nbsp;Attendance</a>
-</li>
-
-<li>
-<a href="/guardian/ppstudentasmtlist.html?23145569091963555717">Assignments&nbsp;for&nbsp;the&nbsp;Current&nbsp;Term</a>
-</li>
-
-
-<li>
-<a href="/guardian/att_list_mtg_points.html?29263890604866199929">Attendance&nbsp;Points</a>
-</li>
-
-</ul>
+</strong>
+</div>
+<strong wildcard="" file:<="" strong="">
+<div id="content-main" class="group">
+<h1>Grade History Details: D'souza, Lisa R</h1>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="home.html?92851039827127903711" id="btnBack" class="button" name="btnBack">Return to Grades and Attendance</a>
 <br>
-<!--BILBO
-
-<center>
-<td><a href="/guardian/ppstudentasmtlist.html?73140957412953940620">Click Here</a> to view a list of all assignments and scores for the current term.
-</td>
-</center>
-
-
-<center>
-<td><a href="/guardian/att_list_mtg_points.html?15522867114572417456">Click Here</a> to view a list of all attendance points for the current courses.
-</td>
-</center>
--->
-<div id="quickLookup">
-
-
-
-
-
-
-
-
-
-
-<table class="grid">
-<tbody><tr><th class="center" colspan="25">Attendance By Class</th></tr>
-<tr class="center th2">
-<th rowspan="2">Exp</th>
-<th colspan="5">Last Week</th><th colspan="5">This Week</th><th rowspan="2">Course</th>
-<th rowspan="2">Q1</th>
-<th rowspan="2">Q2</th>
-<th rowspan="2">X1</th>
-<th rowspan="2">Q3</th>
-<th rowspan="2">Q4</th>
-<th rowspan="2">X2</th>
-<th rowspan="2">F1</th>
-<th rowspan="2">Absences</th>
-<th rowspan="2">Tardies</th>
+<br>
+<div class="box-round">
+<h2>Class Score Detail</h2>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="grid">
+<thead>
+<tr>
+<th class="left">Course</th>
+<th class="left">Teacher</th>
+<th class="left">Expression</th>
+<th class="left">Final Grade
+<sup>*</sup>
+</th>
 </tr>
-<tr class="center th2">
-<th title="Mon, Feb 23, 2015 :  C Day">M</th><th title="Tue, Feb 24, 2015 :  D Day">T</th><th title="Wed, Feb 25, 2015 :  E Day">W</th><th title="Thu, Feb 26, 2015 :  F Day">H</th><th title="Fri, Feb 27, 2015 :  G Day">F</th><th title="Mon, Mar 02, 2015 :  A Day">M</th><th title="Tue, Mar 03, 2015 :  B Day">T</th><th title="Wed, Mar 04, 2015 :  C Day">W</th><th title="Thu, Mar 05, 2015 :  Not in Session">H</th><th title="Fri, Mar 06, 2015 :  D Day">F</th></tr>
-<tr class="center" bgcolor="#edf3fe" id="ccid_444116">
+</thead>
+<tbody>
+<tr>
+<td>AP English III</td>
+<td>Bathke, John</td>
 <td>1(A-G)</td>
-<td><br></td><td>1<br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">Algorithms &amp; Data Structures&nbsp;<br><a href="teacherinfo.html?frn=005595&amp;nolink=true" title="Details about Elia, Graciela" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:graciela_elia@princetonk12.org">Elia, Graciela</a>&nbsp;-&nbsp;Rm: 242</td>
-<td><a href="scores.html?frn=031925420&amp;fg=Q1">A</a></td>
-<td><a href="scores.html?frn=004444116&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">A</a></td>
-<td><a href="scores.html?frn=004444116&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">A</a></td>
-<td><a href="scores.html?frn=004444116&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">F</a></td>
-<td><a href="scores.html?frn=004444116&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004444116&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004444116&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">10</a></td>
-<td>0</td>
+<td>
+B- &nbsp;
+
+
+</td>
 </tr>
-<tr class="center" bgcolor="#ffffff" id="ccid_446616">
-<td>2(B-D,F-G)</td>
-<td><br></td><td><br></td><td>.</td><td><br></td><td>1<br></td><td>.</td><td><br></td><td><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">PE 11/12 and Health&nbsp;<br><a href="teacherinfo.html?frn=005761&amp;nolink=true" title="Details about Sutcliffe, Wayne" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:wayne_sutcliffe@princetonk12.org">Sutcliffe, Wayne</a>&nbsp;-&nbsp;Rm: 133</td>
-<td><a href="scores.html?frn=031923166&amp;fg=Q1">A</a></td>
-<td><a href="scores.html?frn=004446616&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">A</a></td>
-<td><a href="scores.html?frn=004446616&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">--</a></td>
-<td><a href="scores.html?frn=004446616&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">A</a></td>
-<td><a href="scores.html?frn=004446616&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004446616&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004446616&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">9</a></td>
-<td>0</td>
-</tr>
-<tr class="center" bgcolor="#edf3fe" id="ccid_446614">
-<td>3(A-G)</td>
-<td><br></td><td>1<br></td><td><br></td><td><br></td><td>1<br></td><td><br></td><td><br></td><td><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">AP Statistics&nbsp;<br><a href="teacherinfo.html?frn=005617&amp;nolink=true" title="Details about LaPlaca, Christine" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:christine_laplaca@princetonk12.org">LaPlaca, Christine</a>&nbsp;-&nbsp;Rm: 131</td>
-<td><a href="scores.html?frn=031924538&amp;fg=Q1">B+</a></td>
-<td><a href="scores.html?frn=004446614&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">B+</a></td>
-<td><a href="scores.html?frn=004446614&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">A-</a></td>
-<td><a href="scores.html?frn=004446614&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">A</a></td>
-<td><a href="scores.html?frn=004446614&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004446614&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004446614&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">7</a></td>
-<td>0</td>
-</tr>
-<tr class="center" bgcolor="#ffffff" id="ccid_444117">
-<td>4(A-G)</td>
-<td><br></td><td>1<br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">Sociology Accelerated&nbsp;<br><a href="teacherinfo.html?frn=0051158&amp;nolink=true" title="Details about Shelley, Mark" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:mark_shelley@princetonk12.org">Shelley, Mark</a>&nbsp;-&nbsp;Rm: 273</td>
-<td><a href="scores.html?frn=031922886&amp;fg=Q1">A</a></td>
-<td><a href="scores.html?frn=004444117&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">A</a></td>
-<td><a href="scores.html?frn=004444117&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">A</a></td>
-<td><a href="scores.html?frn=004444117&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">A-</a></td>
-<td><a href="scores.html?frn=004444117&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004444117&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004444117&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">6</a></td>
-<td>0</td>
-</tr>
-<tr class="center" bgcolor="#edf3fe" id="ccid_444115">
-<td>5(A-G)</td>
-<td><br></td><td>1<br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">AP English IV&nbsp;<br><a href="teacherinfo.html?frn=005557&amp;nolink=true" title="Details about Cameron, Scott" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:scott_cameron@princetonk12.org">Cameron, Scott</a>&nbsp;-&nbsp;Rm: 166</td>
-<td><a href="scores.html?frn=031922560&amp;fg=Q1">A-</a></td>
-<td><a href="scores.html?frn=004444115&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">A</a></td>
-<td><a href="scores.html?frn=004444115&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">A</a></td>
-<td><a href="scores.html?frn=004444115&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">B</a></td>
-<td><a href="scores.html?frn=004444115&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004444115&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004444115&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">2</a></td>
-<td>0</td>
-</tr>
-<tr class="center" bgcolor="#ffffff" id="ccid_446613">
-<td>6(A-G)</td>
-<td><br></td><td>1<br></td><td><br></td><td><br></td><td>1<br></td><td><br></td><td><br></td><td><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">AP Calculus AB&nbsp;<br><a href="teacherinfo.html?frn=0053651&amp;nolink=true" title="Details about Livingston, Graham" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:graham_livingston@princetonk12.org">Livingston, Graham</a>&nbsp;-&nbsp;Rm: 233</td>
-<td><a href="scores.html?frn=031918600&amp;fg=Q1">A</a></td>
-<td><a href="scores.html?frn=004446613&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">A</a></td>
-<td><a href="scores.html?frn=004446613&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">A-</a></td>
-<td><a href="scores.html?frn=004446613&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">D</a></td>
-<td><a href="scores.html?frn=004446613&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004446613&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004446613&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">8</a></td>
-<td>0</td>
-</tr>
-<tr class="center" bgcolor="#edf3fe" id="ccid_446615">
-<td>7(C,G) 8(A-G)</td>
-<td><br><br></td><td>1<br></td><td><br></td><td><br></td><td>1<br><br></td><td><br></td><td><br></td><td><br><br></td><td class="notInSession">&nbsp;</td><td><br></td>
-<td align="left">Anatomy &amp; Physiology&nbsp;<br><a href="teacherinfo.html?frn=0053654&amp;nolink=true" title="Details about Katz, Jacqueline" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:jacqueline_katz@princetonk12.org">Katz, Jacqueline</a>&nbsp;-&nbsp;Rm: 280</td>
-<td><a href="scores.html?frn=031925214&amp;fg=Q1">A</a></td>
-<td><a href="scores.html?frn=004446615&amp;begdate=11/12/2014&amp;enddate=01/21/2015&amp;fg=Q2">A</a></td>
-<td><a href="scores.html?frn=004446615&amp;begdate=01/22/2015&amp;enddate=01/29/2015&amp;fg=X1">A</a></td>
-<td><a href="scores.html?frn=004446615&amp;begdate=01/30/2015&amp;enddate=04/14/2015&amp;fg=Q3">B-</a></td>
-<td><a href="scores.html?frn=004446615&amp;begdate=04/15/2015&amp;enddate=06/10/2015&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004446615&amp;begdate=06/11/2015&amp;enddate=06/17/2015&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td><a href="attendancedates.html?frn=004446615&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">10</a></td>
-<td>0</td>
-</tr>
-<tr class="center" bgcolor="#ffffff" id="ccid_465541">
-<td>HR(A-G)</td>
-<td>.</td><td>.</td><td>&nbsp;</td><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td><td class="notInSession">&nbsp;</td><td>.</td>
-<td align="left">Homeroom - Grade 12&nbsp;<a title="Section Teachers" class="dialogC" id="uniqueID" href="/guardian/coteach/showSectionTeachersAJAX.action?sectionId=35151&amp;psPortal=guardian"> <img src="/images/img/coteach.png" width="16px" height="16px"></a><br><a href="teacherinfo.html?frn=0051001&amp;nolink=true" title="Details about Goduto, Lenny" class="button mini dialogM"><em class="ui-icon ui-icon-white ui-icon-contact"></em></a>&nbsp;<a href="mailto:lenny_goduto@princetonk12.org">Goduto, Lenny</a>&nbsp;-&nbsp;Rm: 264</td>
-<td>&nbsp;</td>
-<td><a href="scores.html?frn=004465541&amp;fg=Q2">--</a></td>
-<td><a href="scores.html?frn=004465541&amp;fg=X1">--</a></td>
-<td><a href="scores.html?frn=004465541&amp;fg=Q3">--</a></td>
-<td><a href="scores.html?frn=004465541&amp;fg=Q4">--</a></td>
-<td><a href="scores.html?frn=004465541&amp;fg=X2">--</a></td>
-<td>&nbsp;</td>
-<td>0</td>
-<td>0</td>
+</tbody>
+</table>
+<!-- The following row has 2 paragraphs - only one is visible at a time -->
+<!-- 4D's parser breaks on ; or : in comment fields passed to 'decode'-->
+<table class="grid">
+<tbody>
+<tr>
+<td>
+<strong>Section Description</strong>
+</td>
 </tr>
 <tr>
-<th class="right" colspan="19">Attendance Totals</th>
-<th><a href="attendancedatesall.html?frn=~(frn)&amp;codes=*abs&amp;term=14-15&amp;mode=ATT_ModeMeeting&amp;mode=ATT_ModeInterval">52</a></th>
-<th>0</th>
+<td>&nbsp;</td>
 </tr>
-</tbody></table>
-<table border="0" cellpadding="3" cellspacing="1" width="100">
-<tbody><tr>
-<td align="center">Current Unweighted GPA (Q2): 3.44</td>
+</tbody>
+</table>
+<table class="grid">
+<tbody>
+<tr>
+<td>
+<strong>Grade Storage Information</strong>
+</td>
 </tr>
 <tr>
-<td align="center"><a href="home.html?showdropped=true&amp;89223487668692312453">Show dropped classes also</a></td>
-</tr>
-</tbody></table>
+<td>
+Grade stored on 11/20/2014
+<br>
+*  - This final grade may include assignments that are not yet published by
+the teacher. It may also be a result of
+<a href="#" onclick="openSpecialWeighting('parent');">special weighting</a> used by the teacher.
 
-
-<table class="center grid">
-<tbody><tr><th class="center" colspan="25">Attendance By Day</th></tr>
-<tr class="center th2">
-<th colspan="5">Last Week</th><th colspan="5">This Week</th><th colspan="2" class="bold">Absences</th>
-<th colspan="2" class="bold">Tardies</th>
+</td>
 </tr>
-<tr class="center th2">
-<th title="Mon, Feb 23, 2015 :  C Day">M</th><th title="Tue, Feb 24, 2015 :  D Day">T</th><th title="Wed, Feb 25, 2015 :  E Day">W</th><th title="Thu, Feb 26, 2015 :  F Day">H</th><th title="Fri, Feb 27, 2015 :  G Day">F</th><th title="Mon, Mar 02, 2015 :  A Day">M</th><th title="Tue, Mar 03, 2015 :  B Day">T</th><th title="Wed, Mar 04, 2015 :  C Day">W</th><th title="Thu, Mar 05, 2015 :  Not in Session">H</th><th title="Fri, Mar 06, 2015 :  D Day">F</th><th>14-15</th>
-<th>YTD</th>
-<th>14-15</th>
-<th>YTD</th>
+</tbody>
+</table>
+</div>
+<div class="box-round">
+<h2>Assignment Scores</h2>
+<table border="0" cellpadding="0" cellspacing="0" class="grid">
+<thead>
+<tr>
+<th class="left">Due Date</th>
+<th class="left">Category</th>
+<th class="left">Assignment</th>
+<th class="center" colspan="5">Codes</th>
+<th class="center">Score</th>
+<th class="center"></th>
+<th class="center">Grd
+</th>
 </tr>
-<tr class="center" bgcolor="#edf3fe">
-<td>&nbsp;</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td class="notInsSession">&nbsp;</td><td>&nbsp;</td>
-<td><a href="attendancedates.html?codes=*abs&amp;term=14-15&amp;mode=ATT_ModeDaily">6</a></td>
-<td><a href="attendancedates.html?codes=*abs&amp;mode=ATT_ModeDaily">6</a></td>
-<td><a href="attendancedates.html?codes=*tar&amp;term=14-15&amp;mode=ATT_ModeDaily">2</a></td>
-<td><a href="attendancedates.html?codes=*tar&amp;mode=ATT_ModeDaily">2</a></td>
+</thead>
+<tbody>
+<tr bgcolor="#edf3fe">
+<td>09/08/2014</td>
+<td>CHW</td>
+<td>Mendez Article</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">81/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>09/16/2014</td>
+<td>CHW</td>
+<td>Visions of America</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">81/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>09/17/2014</td>
+<td>Writ</td>
+<td>Summer Reading Essay</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">84.5/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>09/23/2014</td>
+<td>CHW</td>
+<td>Franklin Questions</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">81/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>09/26/2014</td>
+<td>CHW</td>
+<td>Franklin Personal Improvement Plan</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">81/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>10/06/2014</td>
+<td>CHW</td>
+<td>SRE Writing Clinic #1</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">88/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B+</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>10/09/2014</td>
+<td>Writ</td>
+<td>Bradstreet Synthesis</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">149/200</span>
+</td>
+<td align="center"></td>
+<td align="center">C</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>10/20/2014</td>
+<td>CHW</td>
+<td>TSL: Reading Test</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">126.75/150</span>
+</td>
+<td align="center"></td>
+<td align="center">B</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>10/20/2014</td>
+<td>CHW</td>
+<td>Hawthorne Sentences</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">78/100</span>
+</td>
+<td align="center"></td>
+<td align="center">C+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>10/28/2014</td>
+<td>CHW</td>
+<td>Writing Clinic #3 Bradstreet</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">96.5/100</span>
+</td>
+<td align="center"></td>
+<td align="center">A</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>10/28/2014</td>
+<td>Writ</td>
+<td>MBV Literary Device 1-page essay</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">117/150</span>
+</td>
+<td align="center"></td>
+<td align="center">C+</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>10/31/2014</td>
+<td>CHW</td>
+<td>Ch 1 Image as Gateway</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">81/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>11/03/2014</td>
+<td>CHW</td>
+<td>Ch 2 Annotated Reading</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">121.5/150</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#ffffff">
+<td>11/10/2014</td>
+<td>Summ</td>
+<td>Summative Assessment</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">81/100</span>
+</td>
+<td align="center"></td>
+<td align="center">B-</td>
+</tr>
+<tr bgcolor="#edf3fe">
+<td>11/10/2014</td>
+<td>Summ</td>
+<td>Participatio  Q1</td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="14"></td>
+<td width="19"></td>
+<td align="center">
+<span class="bold-underline">--/100</span>
+</td>
+<td align="center"></td>
+<td align="center">&nbsp;</td>
 </tr>
 <tr>
-<th class="right" colspan="10">Attendance Totals</th>
-<th><a href="attendancedates.html?codes=*abs&amp;term=14-15&amp;mode=ATT_ModeDaily">6</a></th>
-<th><a href="attendancedates.html?codes=*abs&amp;mode=ATT_ModeDaily">6</a></th>
-<th><a href="attendancedates.html?codes=*tar&amp;term=14-15&amp;mode=ATT_ModeDaily">2</a></th>
-<th><a href="attendancedates.html?codes=*tar&amp;mode=ATT_ModeDaily">2</a></th>
+<td colspan="11" align="center">
+<img src="/images/icon_check.gif" alt="Collected"> - Collected,
+<img src="/images/icon_late.gif" alt="Late"> - Late,
+<img src="/images/icon_missing.gif" alt="Missing"> - Missing,
+<img src="/images/icon_exempt.gif" alt="Exempt"> - Score is exempt from final grade,
+<img src="/images/icon_excluded.gif" alt="Excluded"> - Assignment is not included in final grade
+
+</td>
 </tr>
-</tbody></table>
-
-
-
-
-
-
+</tbody>
+</table>
 </div>
-</div>
-<div id="legend">
-<h3>Attendance Codes Legend</h3>
-<p><strong>Attendance Codes: </strong>&nbsp; Blank=Present<span class="disclaimer"> | </span> 1=Absent<span class="disclaimer"> | </span> AV=Absence Verified <span class="disclaimer"> | </span> 5=Absent Half Day<span class="disclaimer"> | </span> HV=Absent Half Day Verified<span class="disclaimer"> | </span> 2=Absent  Never Attended<span class="disclaimer"> | </span> MX=Medical<span class="disclaimer"> | </span> M=Medical<span class="disclaimer"> | </span> 3=Excused Absence Due to Religious Holiday or "Bring Your Child to Work" day<span class="disclaimer"> | </span> 9=IEP Exempt from Attendance<span class="disclaimer"> | </span> 7=Home Instruction<span class="disclaimer"> | </span> TF=Truant Full Day<span class="disclaimer"> | </span> TH=Truant Half Day<span class="disclaimer"> | </span> TU=Tardy Unexcused <span class="disclaimer"> | </span> TV=Tardy Verified<span class="disclaimer"> | </span> TE=Tardy Excused<span class="disclaimer"> | </span> ED=Early Dismissal<span class="disclaimer"> | </span> FT=Field Trip<span class="disclaimer"> | </span> TS=Testing<span class="disclaimer"> | </span> SF=Suspension Full Day<span class="disclaimer"> | </span> SH=Suspension Half Day<span class="disclaimer"> | </span> IS=In School Suspension<span class="disclaimer"> | </span> G=Guidance  / Administration / Nurse / Etc.<span class="disclaimer"> | </span> CV=College Visit<span class="disclaimer"> | </span> SA=Sports/Activities<span class="disclaimer"> | </span> AF=Administrative Dismissal - Full Day<span class="disclaimer"> | </span> AH=Administrative Dismissal - Half Day<span class="disclaimer"> | </span> 4=PLASCO<span class="disclaimer"> | </span>
-</p>
-<p><strong>Citizenship Codes: </strong>&nbsp; O=Outstanding<span class="disclaimer"> | </span> S=Satisfactory<span class="disclaimer"> | </span> N=Needs improvement<span class="disclaimer"> | </span> U=Unsatisfactory<span class="disclaimer"> | </span></p>
-</div>
-
 <input id="activeNav" type="hidden" value="#btn-gradesAttendance">
 <div id="cust-content-footer"></div>
 </div>
@@ -959,28 +1050,61 @@ DISCLAIMER: This system is provided as a convenience. Grades and other informati
 <!--end content-->
 <!-- end of shell for entire page -->
 <!-- Start of copyright table -->
-</strong></div><strong wildcard="" file:<="" strong="">
-</strong></div><strong wildcard="" file:<="" strong="">
+</strong>
+</div>
+<strong wildcard="" file:<="" strong="">
+</strong>
+</div>
+<strong wildcard="" file:<="" strong="">
 <!--end container-->
 <div id="master-drawer-content-div">
-
-
-
-
+<style type="text/css">
+.rightSideDrawerPanel .content, .rightSideDrawerPanel.buttonless .content, .rightSideDrawerPanel .button-row, .rightSideDrawerPanel h1 {
+width: 500px;
+}
+</style>
+<div id="pluginLinkDrawerPanel" class="rightSideDrawerPanel collapsed buttonless">
+<div class="content">
+<h1>Applications
+<span>
+<button id="pluginLinkDrawerPanelBtnClose" onclick="toggleDrawerPanel('pluginLinkDrawerPanel', 'pluginLinkDrawerModalOverlay', 'collapsed'); return false;">Close</button>
+</span>
+</h1>
+<div class="box-round">
+<table id="pluginLinkDrawerTable" class="linkDescList">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th>Applications</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="/guardian/openid/oidredirectaction.action?pluginName=SchoolMessenger&amp;linkId=164&amp;studentContext=true" title="SchoolMessenger - Contact Manager" id="link-2791e886a2e130973030e7da978d14c2" target="_blank">Contact Manager</a>
+</td>
+<td>SchoolMessenger - Contact Manager</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="doorProp"></div>
+</div>
+</div>
+<div id="pluginLinkDrawerModalOverlay" class="drawerModalOverlay"></div>
 </div>
 <div id="footer">
 <div id="legal">
 <p>Copyright© 2005 - 2014 Pearson Education, Inc., or its affiliate(s). All rights reserved.</p>
-<span id="spanEPPVersion">Enhanced Parent Portal Customization.</span></div>
-
+<span id="spanEPPVersion">Enhanced Parent Portal Customization.</span>
 </div>
-
-
+</div>
 <!--<iframe style="height:0px;width:0px;visibility:hidden" src="javascript:false" id="disablecache"></iframe>-->
-
-
-
-
-</strong><div id="sessiontimeoutwarning" style="display: none"></div></body></html>
-2015-03-06 07:24:13.946 PHSLabDays[18328:831411]
-Fine, 1
+</strong>
+<div id="sessiontimeoutwarning" style="display: none"></div>
+</body>
+</html>
