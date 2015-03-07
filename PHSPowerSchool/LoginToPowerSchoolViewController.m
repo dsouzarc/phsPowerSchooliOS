@@ -96,25 +96,6 @@
     return score;
 }
 
-
-- (CiassInformation*) getClassInformation:(TFHppleElement*)attributes
-{
-    NSString *grade = attributes.content;
-    NSString *link = [NSString stringWithFormat:@"https://pschool.princetonk12.org/guardian/%@",
-                      [self parseLinkFromTD:attributes.raw]];
-    
-    return [[CiassInformation alloc] initWithInformation:grade link:link];
-}
-
-- (NSString*) parseLinkFromTD:(NSString*)string
-{
-    string = [string componentsSeparatedByString:@">"][1];
-    string = [string stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-    string = [string stringByReplacingOccurrencesOfString:@"&amp;" withString:@"&"];
-    string = [string stringByReplacingOccurrencesOfString:@"<a href=" withString:@""];
-    return string;
-}
-
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -139,39 +120,7 @@
     }
     
     else if([currentURL isEqualToString:@"https://pschool.princetonk12.org/guardian/home.html"]){
-        NSString *html = [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
         
-        NSData *data = [html dataUsingEncoding:NSUTF8StringEncoding];
-        TFHpple *document = [[TFHpple alloc] initWithHTMLData:data];
-        
-        NSString *tutorialsXpathQueryString = @"//div[@id='quickLookup']/table/tbody/tr"; ///td
-        NSArray *tutorialsNodes = [document searchWithXPathQuery:tutorialsXpathQueryString];
-        
-        for (int i = 3; i < tutorialsNodes.count - 9; i++) {
-            
-            TFHppleElement *entireClass = (TFHppleElement*)[tutorialsNodes objectAtIndex:i];
-            NSArray *classDetails = entireClass.children;
-            
-            NSString *className = ((TFHppleElement*)classDetails[14]).content;
-            
-            CiassInformation *q1Information = [self getClassInformation:((TFHppleElement*)classDetails[16])];
-            CiassInformation *q2Information = [self getClassInformation:((TFHppleElement*)classDetails[18])];
-            CiassInformation *x1Information = [self getClassInformation:((TFHppleElement*)classDetails[20])];
-            CiassInformation *q3Information = [self getClassInformation:((TFHppleElement*)classDetails[22])];
-            CiassInformation *q4Information = [self getClassInformation:((TFHppleElement*)classDetails[24])];
-            CiassInformation *x2Information = [self getClassInformation:((TFHppleElement*)classDetails[26])];
-            
-            StudentCIass *class = [[StudentCIass alloc] initWithAllInformation:className q1:q1Information q2:q2Information x1:x1Information q3:q3Information q4:q4Information x2:x2Information];
-            
-            [self.studentClasses addObject:class];
-        }
-        
-        for(StudentCIass *class in self.studentClasses) {
-            NSLog(class.description);
-        }
-        
-        NSString *tempLink = ((StudentCIass*)self.studentClasses[0]).q1.link;
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:tempLink]]];
     }
     
     //Specific class grades
@@ -192,7 +141,6 @@
             NSString *className = ((TFHppleElement*)classDetails[14]).content;
         }
     }
-
 }
 
 - (void) injectInformation:(BOOL)isStudent username:(NSString*)username password:(NSString*)password {
