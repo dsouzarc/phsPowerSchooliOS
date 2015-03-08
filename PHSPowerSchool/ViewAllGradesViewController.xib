@@ -6,8 +6,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewAllGradesViewController">
             <connections>
-                <outlet property="tableView" destination="q1d-6I-jJk" id="DeW-ep-AlA"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="xDY-Jd-OR4"/>
+                <outlet property="collectionView" destination="XYq-Hh-ALo" id="Szw-MX-eNA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="I7w-Mm-RCB"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,20 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="q1d-6I-jJk">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XYq-Hh-ALo">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XQr-6C-2hW">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fSF-xA-gko"/>
+                        <outlet property="delegate" destination="-1" id="WRW-dU-DZ5"/>
+                    </connections>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="q1d-6I-jJk" secondAttribute="trailing" id="KLe-zU-ajs"/>
-                <constraint firstItem="q1d-6I-jJk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M2h-Hx-s86"/>
-                <constraint firstAttribute="bottom" secondItem="q1d-6I-jJk" secondAttribute="bottom" id="NnE-UY-aTF"/>
-                <constraint firstAttribute="centerY" secondItem="q1d-6I-jJk" secondAttribute="centerY" id="ffc-4q-NIU"/>
-                <constraint firstAttribute="centerX" secondItem="q1d-6I-jJk" secondAttribute="centerX" id="hZu-aP-lxC"/>
-                <constraint firstItem="q1d-6I-jJk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rch-4M-pse"/>
-            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="292.5" y="304.5"/>
         </view>

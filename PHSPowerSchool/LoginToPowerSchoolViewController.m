@@ -10,11 +10,9 @@
 #import "PQFBarsInCircle.h"
 #import "UICKeyChainStore.h"
 #import "TFHpple.h"
-
-#import "StudentCIass.h"
-#import "CiassInformation.h"
 #import "SettingsViewController.h"
 #import "Assignment.h"
+#import "ViewAllGradesViewController.h"
 
 @interface LoginToPowerSchoolViewController ()
 
@@ -22,8 +20,6 @@
 
 @property (strong, nonatomic) UICKeyChainStore *keychain;
 @property (strong, nonatomic) SettingsViewController *settingsViewController;
-
-@property (strong, nonatomic) NSMutableArray *studentClasses;
 
 - (IBAction)editSettings:(id)sender;
 
@@ -35,12 +31,11 @@
     [super viewDidLoad];
     self.webView.delegate = self;
     self.keychain = [[UICKeyChainStore alloc] init];
-    self.studentClasses = [[NSMutableArray alloc] init];
     
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18", @"UserAgent", nil];
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
     
-    //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://pschool.princetonk12.org/public/home.html"]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://pschool.princetonk12.org/public/home.html"]]];
     
     if(self.keychain[@"username"] == nil || self.keychain[@"password"] == nil) {
         self.settingsViewController = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil webView:self.webView];
@@ -86,7 +81,7 @@
     }
     
     for(Assignment *assignment in allAssignments) {
-        NSLog(@"%@\n\n", assignment);
+        //NSLog(@"%@\n\n", assignment);
     }
 }
 
@@ -119,12 +114,18 @@
                 [self injectInformation:[self.keychain[@"isStudent"] isEqualToString:@"YES"] username:self.keychain[@"username"] password:self.keychain[@"password"]];
     }
     
+    if([currentURL isEqualToString:@"https://pschool.princetonk12.org/guardian/studentsched.html"]) {
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://pschool.princetonk12.org/guardian/home.html"]]];
+    }
+    
     else if([currentURL isEqualToString:@"https://pschool.princetonk12.org/guardian/home.html"]){
+        ViewAllGradesViewController *viewAllGrades = [[ViewAllGradesViewController alloc] initWithNibName:@"ViewAllGradesViewController" bundle:[NSBundle mainBundle] webView:self.webView];
         
+        self.view.window.rootViewController = viewAllGrades;
     }
     
     //Specific class grades
-    else if([currentURL containsString:@"https://pschool.princetonk12.org/guardian/scores.html?frn="]) {
+    else if([currentURL containsString:@"https://pschool.princetonk12.org/guardian/scores.html?frn="] && 1 != 1) {
         NSString *html = [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
         
         NSData *data = [html dataUsingEncoding:NSUTF8StringEncoding];

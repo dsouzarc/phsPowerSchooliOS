@@ -11,11 +11,11 @@
 #import "StudentCIass.h"
 #import "TFHpple.h"
 #import "TFHppleElement.h"
+#import "QuarterCollectionViewCell.h"
+
 @interface ViewAllGradesViewController ()
 
-@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) UIWebView *webView;
-
 @property (nonatomic, strong) NSMutableArray *studentClasses;
 
 @end
@@ -43,6 +43,10 @@
     NSString *tutorialsXpathQueryString = @"//div[@id='quickLookup']/table/tbody/tr"; ///td
     NSArray *tutorialsNodes = [document searchWithXPathQuery:tutorialsXpathQueryString];
     
+    if(tutorialsNodes == nil || tutorialsNodes.count <= 3) {
+        return;
+    }
+    
     for (int i = 3; i < tutorialsNodes.count - 9; i++) {
         
         TFHppleElement *entireClass = (TFHppleElement*)[tutorialsNodes objectAtIndex:i];
@@ -63,11 +67,11 @@
     }
     
     for(StudentCIass *class in self.studentClasses) {
-        NSLog(class.description);
+        //NSLog(class.description);
     }
     
-    NSString *tempLink = ((StudentCIass*)self.studentClasses[0]).q1.link;
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:tempLink]]];
+    //NSString *tempLink = ((StudentCIass*)self.studentClasses[0]).q1.link;
+    //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:tempLink]]];
 }
 
 - (CiassInformation*) getClassInformation:(TFHppleElement*)attributes
@@ -88,8 +92,65 @@
     return string;
 }
 
+- (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 2;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 3;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    QuarterCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"QuarterCollectionViewCell" forIndexPath:indexPath];
+    
+    cell.textLabel.text = @"T1";
+    [cell.textLabel sizeToFit];
+    
+    UILabel *temp = (UILabel*)[cell viewWithTag:100];
+    temp.text = @"Success!";
+    
+    cell.textLabel.textColor = [UIColor yellowColor];
+    cell.backgroundColor=[UIColor greenColor];
+    return cell;
+}
+
+/*- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(70, 70);
+}
+
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    NSInteger SMEPGiPadViewControllerCellWidth = 70; //self.collectionView.collectionViewLay
+    
+    NSInteger numberOfCells = self.view.frame.size.width / SMEPGiPadViewControllerCellWidth;
+    NSInteger edgeInsets = (self.view.frame.size.width - (6 * SMEPGiPadViewControllerCellWidth)) / (numberOfCells + 1);
+    
+    return UIEdgeInsetsMake(0, edgeInsets, 0, edgeInsets);
+    //return UIEdgeInsetsMake(0, 100, 0, 0);
+}*/
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    
+    flowLayout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
+    flowLayout.itemSize = CGSizeMake(70, 70);
+    
+    //[self.collectionView registerClass:[QuarterCollectionViewCell class] forCellWithReuseIdentifier:@"QuarterCollectionViewCell"];
+    [self.collectionView registerNib:[UINib nibWithNibName:@"QuarterCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"QuarterCollectionViewCell"];
+    
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    self.collectionView.collectionViewLayout = flowLayout;
+    
     // Do any additional setup after loading the view from its nib.
 }
 

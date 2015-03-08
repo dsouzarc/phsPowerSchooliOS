@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface ViewAllGradesViewController : ViewController <UITableViewDelegate, UITableViewDelegate>
+@interface ViewAllGradesViewController : ViewController <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UICollectionViewDelegate>
+@property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil webView:(UIWebView*)webView;
 

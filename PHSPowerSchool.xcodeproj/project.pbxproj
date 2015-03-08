@@ -11,6 +11,8 @@
 		9445B2411AAB6CC10091656C /* ViewAllGradesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9445B23F1AAB6CC10091656C /* ViewAllGradesViewController.xib */; };
 		9445B2451AAB6DF10091656C /* ViewAllAssignmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445B2431AAB6DF10091656C /* ViewAllAssignmentsViewController.m */; };
 		9445B2461AAB6DF10091656C /* ViewAllAssignmentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9445B2441AAB6DF10091656C /* ViewAllAssignmentsViewController.xib */; };
+		9445B24F1AABA61F0091656C /* QuarterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9445B24D1AABA61F0091656C /* QuarterCollectionViewCell.m */; };
+		9445B2501AABA61F0091656C /* QuarterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9445B24E1AABA61F0091656C /* QuarterCollectionViewCell.xib */; };
 		94C329AD1AAAB9A200741F06 /* Assignment.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C329AC1AAAB9A200741F06 /* Assignment.m */; };
 		94C90A3E1AA9D58E00E7D516 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A3D1AA9D58E00E7D516 /* main.m */; };
 		94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94C90A401AA9D58E00E7D516 /* AppDelegate.m */; };
@@ -63,6 +65,9 @@
 		9445B2421AAB6DF10091656C /* ViewAllAssignmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewAllAssignmentsViewController.h; sourceTree = "<group>"; };
 		9445B2431AAB6DF10091656C /* ViewAllAssignmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewAllAssignmentsViewController.m; sourceTree = "<group>"; };
 		9445B2441AAB6DF10091656C /* ViewAllAssignmentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewAllAssignmentsViewController.xib; sourceTree = "<group>"; };
+		9445B24C1AABA61F0091656C /* QuarterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuarterCollectionViewCell.h; sourceTree = "<group>"; };
+		9445B24D1AABA61F0091656C /* QuarterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuarterCollectionViewCell.m; sourceTree = "<group>"; };
+		9445B24E1AABA61F0091656C /* QuarterCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuarterCollectionViewCell.xib; sourceTree = "<group>"; };
 		94C329AB1AAAB9A200741F06 /* Assignment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assignment.h; sourceTree = "<group>"; };
 		94C329AC1AAAB9A200741F06 /* Assignment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Assignment.m; sourceTree = "<group>"; };
 		94C90A381AA9D58E00E7D516 /* PHSPowerSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PHSPowerSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +196,9 @@
 				94C90A661AA9DF1000E7D516 /* UICKeyChainStore */,
 				94C90A6D1AA9DF1000E7D516 /* PQFCustomLoaders */,
 				94C90A751AA9DF1000E7D516 /* UIColor+FlatColors */,
+				9445B24C1AABA61F0091656C /* QuarterCollectionViewCell.h */,
+				9445B24D1AABA61F0091656C /* QuarterCollectionViewCell.m */,
+				9445B24E1AABA61F0091656C /* QuarterCollectionViewCell.xib */,
 			);
 			path = PHSPowerSchool;
 			sourceTree = "<group>";
@@ -385,6 +393,7 @@
 				94C90A651AA9D58E00E7D516 /* LoginToPowerSchoolViewController.xib in Resources */,
 				94C90A4C1AA9D58E00E7D516 /* LaunchScreen.xib in Resources */,
 				94C90A491AA9D58E00E7D516 /* Images.xcassets in Resources */,
+				9445B2501AABA61F0091656C /* QuarterCollectionViewCell.xib in Resources */,
 				94C90A791AA9DF1000E7D516 /* LICENSE in Resources */,
 				94C90AA01AAA035400E7D516 /* HTML.txt in Resources */,
 			);
@@ -416,6 +425,7 @@
 				94C90A7B1AA9DF1000E7D516 /* PQFBarsInCircle.m in Sources */,
 				94C90A441AA9D58E00E7D516 /* ViewController.m in Sources */,
 				94C90A641AA9D58E00E7D516 /* LoginToPowerSchoolViewController.m in Sources */,
+				9445B24F1AABA61F0091656C /* QuarterCollectionViewCell.m in Sources */,
 				94C90A411AA9D58E00E7D516 /* AppDelegate.m in Sources */,
 				94C90A9A1AA9FCB500E7D516 /* TFHpple.m in Sources */,
 				94C90A921AA9E58200E7D516 /* MKTextField.swift in Sources */,
