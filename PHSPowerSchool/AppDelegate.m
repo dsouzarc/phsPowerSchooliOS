@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "LoginToPowerSchoolViewController.h"
 
+//FOR TESTING
+#import "ViewAllGradesViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -20,7 +23,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.loginToPowerSchoolViewController = [[LoginToPowerSchoolViewController alloc] initWithNibName:@"LoginToPowerSchoolViewController" bundle:[NSBundle mainBundle]];
-    self.window.rootViewController = self.loginToPowerSchoolViewController;
+    
+    ViewAllGradesViewController *viewAllG = [[ViewAllGradesViewController alloc] initWithNibName:@"ViewAllGradesViewController" bundle:[NSBundle mainBundle]];
+    
+    self.window.rootViewController = viewAllG; //self.loginToPowerSchoolViewController;
     
     return YES;
 }

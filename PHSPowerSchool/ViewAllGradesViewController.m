@@ -33,9 +33,17 @@
     return self;
 }
 
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil webView:nil];
+    return self;
+}
+
 - (void)updateClassGrades
 {
-    NSString *html = [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
+    /*
+     FOR TESTING
+     NSString *html = [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
     
     NSData *data = [html dataUsingEncoding:NSUTF8StringEncoding];
     TFHpple *document = [[TFHpple alloc] initWithHTMLData:data];
@@ -64,14 +72,18 @@
         StudentCIass *class = [[StudentCIass alloc] initWithAllInformation:className q1:q1Information q2:q2Information x1:x1Information q3:q3Information q4:q4Information x2:x2Information];
         
         [self.studentClasses addObject:class];
-    }
+    } */
+    
+    [self.studentClasses removeAllObjects];
+    
+    [self loadData];
     
     for(StudentCIass *class in self.studentClasses) {
-        //NSLog(class.description);
+        NSLog(class.description);
     }
     
-    [self saveData];
-    NSLog(@"DATA SAVED");
+    //[self saveData];
+    //NSLog(@"DATA SAVED");
     
     //NSString *tempLink = ((StudentCIass*)self.studentClasses[0]).q1.link;
     //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:tempLink]]];
@@ -79,33 +91,29 @@
 
 - (void) loadData
 {
-    // look for saved data.
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
-    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-        NSData *data = [NSData dataWithContentsOfFile:filePath];
-        NSDictionary *savedData = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-        
-        if ([savedData objectForKey:@"classInformation"] != nil) {
-            self.studentClasses = [[NSMutableArray alloc] initWithArray:[savedData objectForKey:@"classInformation"]];
+    NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+    NSData *savedArray = [currentDefaults objectForKey:@"StudentClasses"];
+    if (savedArray != nil)
+    {
+        NSArray *oldArray = [NSKeyedUnarchiver unarchiveObjectWithData:savedArray];
+        if (oldArray != nil) {
+            self.studentClasses = [[NSMutableArray alloc] initWithArray:oldArray];
+            
+            NSLog(@"SUCCESS!");
+            
+            for(StudentCIass *class in self.studentClasses) {
+                NSLog(class.description);
+            }
+            
+        } else {
+            self.studentClasses = [[NSMutableArray alloc] init];
         }
     }
 }
 
 - (void) saveData
 {
-    NSMutableDictionary *dataDict = [[NSMutableDictionary alloc] initWithCapacity:3];
-    if (self.studentClasses != nil) {
-        [dataDict setObject:self.studentClasses forKey:@"classInformation"];  // save the games array
-    }
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
-    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
-    
-    [NSKeyedArchiver archiveRootObject:dataDict toFile:filePath];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:self.studentClasses] forKey:@"StudentClasses"];
 }
 
 - (CiassInformation*) getClassInformation:(TFHppleElement*)attributes
