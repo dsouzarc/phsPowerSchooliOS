@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "CiassInformation.h"
 
-@interface StudentCIass : NSObject
+@interface StudentCIass : NSObject<NSCoding>
 
 @property (nonatomic, strong) NSString *className;
 

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CiassInformation : NSObject
+@interface CiassInformation : NSObject<NSCoding>
 
 @property (strong, nonatomic) NSString *letterGrade;
 @property (strong, nonatomic) NSString *link;

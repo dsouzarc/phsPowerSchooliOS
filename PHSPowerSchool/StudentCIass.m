@@ -35,6 +35,36 @@
     return self;
 }
 
+- (void) encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.className forKey:@"className"];
+    
+    [aCoder encodeObject:self.q1 forKey:@"q1"];
+    [aCoder encodeObject:self.q2 forKey:@"q2"];
+    [aCoder encodeObject:self.q3 forKey:@"q3"];
+    [aCoder encodeObject:self.q4 forKey:@"q4"];
+    
+    [aCoder encodeObject:self.x1 forKey:@"x1"];
+    [aCoder encodeObject:self.x2 forKey:@"x2"];
+}
+
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    
+    self.className = [aDecoder decodeObjectForKey:@"className"];
+    
+    self.q1 = [aDecoder decodeObjectForKey:@"q1"];
+    self.q2 = [aDecoder decodeObjectForKey:@"q2"];
+    self.q3 = [aDecoder decodeObjectForKey:@"q3"];
+    self.q4 = [aDecoder decodeObjectForKey:@"q4"];
+    
+    self.x1 = [aDecoder decodeObjectForKey:@"x1"];
+    self.x2 = [aDecoder decodeObjectForKey:@"x2"];
+    
+    return self;
+}
+
 - (NSString*) description
 {
     NSMutableString *result = [[NSMutableString alloc] init];

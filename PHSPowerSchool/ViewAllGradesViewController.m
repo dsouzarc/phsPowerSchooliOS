@@ -70,8 +70,42 @@
         //NSLog(class.description);
     }
     
+    [self saveData];
+    NSLog(@"DATA SAVED");
+    
     //NSString *tempLink = ((StudentCIass*)self.studentClasses[0]).q1.link;
     //[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:tempLink]]];
+}
+
+- (void) loadData
+{
+    // look for saved data.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
+    
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        NSDictionary *savedData = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        
+        if ([savedData objectForKey:@"classInformation"] != nil) {
+            self.studentClasses = [[NSMutableArray alloc] initWithArray:[savedData objectForKey:@"classInformation"]];
+        }
+    }
+}
+
+- (void) saveData
+{
+    NSMutableDictionary *dataDict = [[NSMutableDictionary alloc] initWithCapacity:3];
+    if (self.studentClasses != nil) {
+        [dataDict setObject:self.studentClasses forKey:@"classInformation"];  // save the games array
+    }
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectoryPath = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDirectoryPath stringByAppendingPathComponent:@"appData"];
+    
+    [NSKeyedArchiver archiveRootObject:dataDict toFile:filePath];
 }
 
 - (CiassInformation*) getClassInformation:(TFHppleElement*)attributes
@@ -94,12 +128,14 @@
 
 - (NSInteger) numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 2;
+    //Number of classes + 1 for field info 
+    return self.studentClasses.count + 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 3;
+    //Number of fields per class
+    return 6;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -146,7 +182,7 @@
     
     //[self.collectionView registerClass:[QuarterCollectionViewCell class] forCellWithReuseIdentifier:@"QuarterCollectionViewCell"];
     [self.collectionView registerNib:[UINib nibWithNibName:@"QuarterCollectionViewCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"QuarterCollectionViewCell"];
-    
+    self.collectionView.alwaysBounceHorizontal = YES;
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     self.collectionView.collectionViewLayout = flowLayout;

@@ -33,4 +33,20 @@
     return result;
 }
 
+- (id) initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super init];
+    
+    self.letterGrade = [aDecoder decodeObjectForKey:@"letterGrade"];
+    self.link = [aDecoder decodeObjectForKey:@"link"];
+    
+    return self;
+}
+
+- (void) encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.letterGrade forKey:@"letterGrade"];
+    [aCoder encodeObject:self.link forKey:@"link"];
+}
+
 @end
